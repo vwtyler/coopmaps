@@ -1,0 +1,24 @@
+{
+  "name": "d3sc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "d3": "^5.7.0",
+    "dc": "^3.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vwtyler/d3sc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vwtyler/d3sc/issues"
+  },
+  "homepage": "https://github.com/vwtyler/d3sc#readme"
+}
