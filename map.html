@@ -40,8 +40,8 @@ circle {
   </head>
   <body>
     <h2>
-      <span>U.S. commercial airports</span>, 2008<br>
-      great arcs and symbol map
+      <span>Central Electric Power Cooperative</span>, 2018<br>
+      network connections map
     </h2>
     <div style="position:absolute;bottom:0;font-size:18px;">
       <input type="checkbox" id="voronoi"> <label for="voronoi">show Voronoi</label>
@@ -88,32 +88,32 @@ d3.json("us-states.json", function(collection) {
       .attr("d", path);
 });
 
-d3.csv("flights-airport.csv", function(flights) {
+d3.csv("edges.csv", function(connections) {
   var linksByOrigin = {},
-      countByAirport = {},
-      locationByAirport = {},
+      countByCoop = {},
+      locationByCoop = {},
       positions = [];
 
   var arc = d3.geo.greatArc()
-      .source(function(d) { return locationByAirport[d.source]; })
-      .target(function(d) { return locationByAirport[d.target]; });
+      .source(function(d) { return locationByCoop[d.source]; })
+      .target(function(d) { return locationByCoop[d.target]; });
 
-  flights.forEach(function(flight) {
-    var origin = flight.origin,
-        destination = flight.destination,
+  coops.forEach(function(coop) {
+    var origin = coop.Source,
+        destination = coop.Target,
         links = linksByOrigin[origin] || (linksByOrigin[origin] = []);
     links.push({source: origin, target: destination});
-    countByAirport[origin] = (countByAirport[origin] || 0) + 1;
-    countByAirport[destination] = (countByAirport[destination] || 0) + 1;
+    countByCoop[origin] = (countByCoop[origin] || 0) + 1;
+    countByCoop[destination] = (countByCoop[destination] || 0) + 1;
   });
 
-  d3.csv("airports.csv", function(airports) {
+  d3.csv("sc_nodes-geocoded.csv", function(nodes) {
 
     // Only consider airports with at least one flight.
-    airports = airports.filter(function(airport) {
-      if (countByAirport[airport.iata]) {
-        var location = [+airport.longitude, +airport.latitude];
-        locationByAirport[airport.iata] = location;
+    nodes = nodes.filter(function(node) {
+      if (countByCoop[node.Label]) {
+        var location = [+node.lng, +node.lat];
+        locationByCoop[node.Label] = location;
         positions.push(projection(location));
         return true;
       }
@@ -123,7 +123,7 @@ d3.csv("flights-airport.csv", function(flights) {
     var polygons = d3.geom.voronoi(positions);
 
     var g = cells.selectAll("g")
-        .data(airports)
+        .data(coops)
       .enter().append("svg:g");
 
     g.append("svg:path")
@@ -132,7 +132,7 @@ d3.csv("flights-airport.csv", function(flights) {
         .on("mouseover", function(d, i) { d3.select("h2 span").text(d.name); });
 
     g.selectAll("path.arc")
-        .data(function(d) { return linksByOrigin[d.iata] || []; })
+        .data(function(d) { return linksByOrigin[d.Label] || []; })
       .enter().append("svg:path")
         .attr("class", "arc")
         .attr("d", function(d) { return path(arc(d)); });
@@ -142,8 +142,8 @@ d3.csv("flights-airport.csv", function(flights) {
       .enter().append("svg:circle")
         .attr("cx", function(d, i) { return positions[i][0]; })
         .attr("cy", function(d, i) { return positions[i][1]; })
-        .attr("r", function(d, i) { return Math.sqrt(countByAirport[d.iata]); })
-        .sort(function(a, b) { return countByAirport[b.iata] - countByAirport[a.iata]; });
+        .attr("r", function(d, i) { return Math.sqrt(countByCoop[d.Label]); })
+        .sort(function(a, b) { return countByCoop[b.Label] - countByCoop[a.Label]; });
   });
 });
 
