@@ -139,7 +139,7 @@ d3.csv("edges.csv", function(edges) {
 
     g.append("svg:path")
         .attr("class", "cell")
-      //  .attr("d", function(d, i) { return "M" + polygons[i].join("L") + "Z"; })
+        .attr("d", function(d, i) { return "M" + polygons[i].join("L") + "Z"; })
         .on("mouseover", function(d, i) { d3.select("#footer span").text(d.Label); });
 
     g.selectAll("path.arc")
