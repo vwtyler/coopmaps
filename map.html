@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <style type="text/css">
+
+#states path {
+  fill: #ccc;
+  stroke: #fff;
+}
+
+path.arc {
+  pointer-events: none;
+  fill: none;
+  stroke: #000;
+  display: none;
+}
+
+path.cell {
+  fill: none;
+  pointer-events: all;
+}
+
+circle {
+  fill: steelblue;
+  fill-opacity: .8;
+  stroke: #fff;
+}
+
+#cells.voronoi path.cell {
+  stroke: brown;
+}
+
+#cells g:hover path.arc {
+  display: inherit;
+}
+
+    </style>
+  </head>
+  <body>
+    <h2>
+      <span>Central Electric Power Cooperative</span>, 2018<br>
+      network connections map
+    </h2>
+    <div style="position:absolute;bottom:0;font-size:18px;">
+      <input type="checkbox" id="voronoi"> <label for="voronoi">show Voronoi</label>
+    </div>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+    <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+    <script src="https://d3js.org/d3-array.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+    <script src="https://d3js.org/d3-polygon.v1.min.js"></script>
+    <script src="https://d3js.org/d3-voronoi.v1.min.js"></script>
+    <script type="text/javascript">
+
+var w = 1280,
+    h = 800;
+
+var projection = d3.geoAlbers
+  //  .mode("equidistant")
+    //.origin([-98, 38])
+  //  .scale(1400)
+  //  .translate([640, 360]);
+
+var path = d3.geoPath()
+    .projection(projection);
+
+var svg = d3.select("body").insert("svg:svg", "h2")
+    .attr("width", w)
+    .attr("height", h);
+
+var states = svg.append("svg:g")
+    .attr("id", "states");
+
+var circles = svg.append("svg:g")
+    .attr("id", "circles");
+
+var cells = svg.append("svg:g")
+    .attr("id", "cells");
+
+var connections;
+
+d3.select("input[type=checkbox]").on("change", function() {
+  cells.classed("voronoi", this.checked);
+});
+
+d3.json("us-states.json", function(collection) {
+  states.selectAll("path")
+      .data(collection.features)
+    .enter().append("svg:path")
+      .attr("d", path);
+});
+
+d3.csv("edges.csv", function(edges) {
+  var linksByOrigin = {},
+      countByCoop = {},
+      locationByCoop = {},
+      positions = [];
+
+/*  var arc = d3.geo.greatArc()
+      .source(function(d) { return locationByAirport[d.source]; })
+      .target(function(d) { return locationByAirport[d.target]; });
+*/
+  Object.keys(edges).forEach(function(edge) {
+    var origin = edge.origin,
+        destination = edge.destination,
+        links = linksByOrigin[origin] || (linksByOrigin[origin] = []);
+    links.push({source: origin, target: destination});
+    countByCoop[origin] = (countByCoop[origin] || 0) + 1;
+    countByCoop[destination] = (countByCoop[destination] || 0) + 1;
+  });
+
+  d3.csv("sc_nodes-geocoded.csv", function(coops) {
+    function coops(d) {
+        d[0] = +d.lng;
+        d[1] = +d.lat;
+        d.arcs = {type: "MultiLineString", coordinates: []};
+        return d;
+      }
+
+    // Only consider airports with at least one flight.
+    coops = Object.keys(coops).filter(function(coop) {
+      if (countByCoop[coop.ID]) {
+        var location = [+coop.lng, +coop.lat];
+        locationByCoop[coop.ID] = location;
+        positions.push(projection(location));
+        return true;
+      }
+    });
+
+    // Compute the Voronoi diagram of airports' projected positions.
+    var polygons = d3.voronoi(positions).polygons;
+
+    var g = cells.selectAll("g")
+        .data(coops)
+      .enter().append("svg:g");
+
+    g.append("svg:path")
+        .attr("class", "cell")
+      //  .attr("d", function(d, i) { return "M" + polygons[i].join("L") + "Z"; })
+        .on("mouseover", function(d, i) { d3.select("#footer span").text(d.Label); });
+
+    g.selectAll("path.arc")
+        .data(function(d) { return linksByOrigin[d.ID] || []; })
+      .enter().append("svg:path")
+        .attr("class", "arc")
+        .attr("d", function(d) { return path(arc(d)); });
+
+    circles.selectAll("circle")
+        .data(coops)
+      .enter().append("svg:circle")
+        .attr("cx", function(d, i) { return positions[i][0]; })
+        .attr("cy", function(d, i) { return positions[i][1]; })
+        .attr("r", function(d, i) { return Math.sqrt(countByCoop[d.ID]); })
+        .sort(function(a, b) { return countByCoop[b.ID] - countByCoop[a.ID]; });
+  });
+});
+    </script>
+  </body>
+</html>
