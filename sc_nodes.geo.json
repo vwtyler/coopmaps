@@ -1,0 +1,1607 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "1",
+        "FIPS": "",
+        "Label": "Central Electric Power Cooperative",
+        "Address": "20 Cooperative Way",
+        "State": "SC",
+        "Zip": "29210",
+        "Category": "G&T",
+        "Notes": "",
+        "address": "Central Electric Power Cooperative, SC, 20 Cooperative Way",
+        "formatted_address": "20 Cooperative Way, Columbia, SC 29210, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.11528559999999,
+          34.0425226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "2",
+        "FIPS": "",
+        "Label": "New Horizon Electric Cooperative",
+        "Address": "1776 Highway 14",
+        "State": "SC",
+        "Zip": "29360",
+        "Category": "Transmission",
+        "Notes": "Five of Central's Members are also Members of New Horizon Electric Cooperative (NHEC). NHEC maintains a portion of Central's transmission lines. Central paid NHEC $1,590,760 and $2,138,796 in 2017 and 2016, respectively. In 2017, NHEC paid Central $48,000 for management services.",
+        "address": "New Horizon Electric Cooperative, SC, 1776 Highway 14",
+        "formatted_address": "1776 SC-14, Laurens, SC 29360, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.0510034,
+          34.5309567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "3",
+        "FIPS": "",
+        "Label": "Alliance for Cooperatives Energy",
+        "Address": "",
+        "State": "",
+        "Zip": "",
+        "Category": "Management Service",
+        "Notes": "In 2017 Central became a member of the Alliance for Cooperatives Energy Services Power Marketing, LLC (ACES). ACES is a nationwide energy management company. At the end of five years, Central can exit the organization and receive a refund equal to its pro rata share of ACES equity. Central is committed to purchase a minimum level of services from ACES starting at $195,000 annually and increasing 2% annually for a period of five years. Any services above these minimums will be paid at ACES actual cost. Central paid ACES $245,715 in 2017.",
+        "address": "Alliance for Cooperatives Energy, , "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "4",
+        "FIPS": "",
+        "Label": "Cooperative Electric Energy Utility Supply",
+        "Address": "101 Enterprise Parkway",
+        "State": "SC",
+        "Zip": "29171",
+        "Category": "Construction",
+        "Notes": "Central is a member of the Cooperative Electric Energy Utility Supply, Inc. (CEE-US).CEE-US is organized to provide member cooperatives with the ability to purchase utility construction and repair materials and supplies on a combined basis. Central purchased $3,612,141 and $2,505,960 in CEE-US' fiscal years ending September 30, 2017 and 2016, respectively. Central's patronage capital in CEE-US represents approximately 2.5% of total CEE-US patronage capital.",
+        "address": "Cooperative Electric Energy Utility Supply, SC, 101 Enterprise Parkway",
+        "formatted_address": "101 Enterprise Pkwy, West Columbia, SC 29170, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.145242,
+          33.957913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "5",
+        "FIPS": "",
+        "Label": "KW Savings Co.",
+        "Address": "",
+        "State": "",
+        "Zip": "",
+        "Category": "Finance",
+        "Notes": "Central and its Members created KW Savings Co. (KWS) to facilitate on-billing financing of energy efficiency home improvements for Members. Central received a $740,000 Rural Economic Development Loan & Grant (REDLG) loan from the United States Department of Agriculture (USDA), which was loaned to KWS for low interest loans on energy efficiency projects for distribution member households. KWS returns this money to Central at approximately the same time the loans are repaid by the distribution members. As of December 31, 2017 and 2016, $339,167 and $431,667 was outstanding, respectively. In 2017 and 2016, Central provided KWS with $29,877 and $3,823, respectively, to cover program administrative costs. In 2017, KWS paid Central $5,000 for accounting services.",
+        "address": "KW Savings Co., , "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "6",
+        "FIPS": "",
+        "Label": "The Electric Cooperatives of South Carolina, Inc.",
+        "Address": "808 Knox Abbott Drive",
+        "State": "SC",
+        "Zip": "29033",
+        "Category": "State Alliance",
+        "Notes": "",
+        "address": "The Electric Cooperatives of South Carolina, Inc., SC, 808 Knox Abbott Drive",
+        "formatted_address": "808 Knox Abbott Dr, Cayce, SC 29033, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.06243479999999,
+          33.9825755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "7",
+        "FIPS": "",
+        "Label": "Aiken Electric Cooperative",
+        "Address": "2790 Wagener Road",
+        "State": "SC",
+        "Zip": "29802",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Aiken Electric Cooperative, SC, 2790 Wagener Road",
+        "formatted_address": "2790 Wagener Rd, Aiken, SC 29801, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.654842,
+          33.548752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "8",
+        "FIPS": "",
+        "Label": "Berkeley Electric Cooperative",
+        "Address": "414 Highway 52 North",
+        "State": "SC",
+        "Zip": "29461",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Berkeley Electric Cooperative, SC, 414 Highway 52 North",
+        "formatted_address": "North, 7200 Hwy 17, Awendaw, SC 29429, United States"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.62837209999999,
+          33.028304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "9",
+        "FIPS": "",
+        "Label": "Black River Electric Cooperative",
+        "Address": "1121 North Pike Road, West",
+        "State": "SC",
+        "Zip": "29151",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Black River Electric Cooperative, SC, 1121 North Pike Road, West",
+        "formatted_address": "1121 N Pike W, Sumter, SC 29153, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.374324,
+          33.957741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "10",
+        "FIPS": "",
+        "Label": "Blue Ridge Electric Cooperative",
+        "Address": "734 West Main Street",
+        "State": "SC",
+        "Zip": "29671",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Blue Ridge Electric Cooperative, SC, 734 West Main Street",
+        "formatted_address": "734 W Main St, Pickens, SC 29671, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7190509,
+          34.881529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "11",
+        "FIPS": "",
+        "Label": "Broad River Electric Cooperative",
+        "Address": "811 Hamrick Street",
+        "State": "SC",
+        "Zip": "29342",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Broad River Electric Cooperative, SC, 811 Hamrick Street",
+        "formatted_address": "811 Hamrick Street, Gaffney, SC 29340, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6869011,
+          35.0509872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "12",
+        "FIPS": "",
+        "Label": "Edisto Electric Cooperative",
+        "Address": "896 Calhoun Street",
+        "State": "SC",
+        "Zip": "29003",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Edisto Electric Cooperative, SC, 896 Calhoun Street",
+        "formatted_address": "896 Calhoun St, Bamberg, SC 29003, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.04281499999999,
+          33.285526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "13",
+        "FIPS": "",
+        "Label": "Laurens Electric Cooperative",
+        "Address": "2254 Highway 14",
+        "State": "SC",
+        "Zip": "29360",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Laurens Electric Cooperative, SC, 2254 Highway 14",
+        "formatted_address": "2254 SC-14, Laurens, SC 29360, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.0562315,
+          34.5356313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "14",
+        "FIPS": "",
+        "Label": "Marlboro Electric Cooperative",
+        "Address": "254 Highway 15-401 Bypass East",
+        "State": "SC",
+        "Zip": "29512",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Marlboro Electric Cooperative, SC, 254 Highway 15-401 Bypass East",
+        "formatted_address": "676 SC-9, Bennettsville, SC 29512, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.6416642,
+          34.5963403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "15",
+        "FIPS": "",
+        "Label": "Palmetto Electric Cooperative",
+        "Address": "4036 Grays Highway",
+        "State": "SC",
+        "Zip": "29936",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Palmetto Electric Cooperative, SC, 4036 Grays Highway",
+        "formatted_address": "4360, 4063 Grays Hwy, Ridgeland, SC 29936, United States"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.0102239,
+          32.5269182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "16",
+        "FIPS": "",
+        "Label": "Tri-County Electric Cooperative",
+        "Address": "6473 Old State Road",
+        "State": "SC",
+        "Zip": "29135",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Tri-County Electric Cooperative, SC, 6473 Old State Road",
+        "formatted_address": "6473 Old State Rd, St Matthews, SC 29135, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.7746692,
+          33.6307995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "17",
+        "FIPS": "",
+        "Label": "Fairfield Electric Cooperative",
+        "Address": "701 Blythewood Road",
+        "State": "SC",
+        "Zip": "29016",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Fairfield Electric Cooperative, SC, 701 Blythewood Road",
+        "formatted_address": "701 Blythewood Rd, Blythewood, SC 29016, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.0019557,
+          34.2094166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "18",
+        "FIPS": "",
+        "Label": "Little River Electric Cooperative",
+        "Address": "300 Cambridge Street",
+        "State": "SC",
+        "Zip": "29620",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Little River Electric Cooperative, SC, 300 Cambridge Street",
+        "formatted_address": "300 Cambridge St, Abbeville, SC 29620, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.37335589999999,
+          34.1831263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "19",
+        "FIPS": "",
+        "Label": "Mid-Carolina Electric Cooperative",
+        "Address": "254 Longs Pond Road",
+        "State": "SC",
+        "Zip": "29071",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Mid-Carolina Electric Cooperative, SC, 254 Longs Pond Road",
+        "formatted_address": "254 Longs Pond Rd, Lexington, SC 29072, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.2924438,
+          33.9300491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "20",
+        "FIPS": "",
+        "Label": "Pee Dee Electric Cooperative",
+        "Address": "1355 East McIver Road",
+        "State": "SC",
+        "Zip": "29540",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Pee Dee Electric Cooperative, SC, 1355 East McIver Road",
+        "formatted_address": "1355 E McIver Rd, Darlington, SC 29532, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.7897468,
+          34.2568255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "21",
+        "FIPS": "",
+        "Label": "York Electric Cooperative",
+        "Address": "1385 East Alexander Love Highway",
+        "State": "SC",
+        "Zip": "29745",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "York Electric Cooperative, SC, 1385 East Alexander Love Highway",
+        "formatted_address": "1385 Alexander Love Hwy, York, SC 29745, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.2058071,
+          34.9888504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "22",
+        "FIPS": "",
+        "Label": "Coastal Electric Cooperative",
+        "Address": "2269 Jefferies Highway",
+        "State": "SC",
+        "Zip": "29488",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Coastal Electric Cooperative, SC, 2269 Jefferies Highway",
+        "formatted_address": "2269 Jefferies Hwy, Walterboro, SC 29488, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.6607976,
+          32.9332399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "23",
+        "FIPS": "",
+        "Label": "Horry Electric Cooperative",
+        "Address": "2774 Cultra Road",
+        "State": "SC",
+        "Zip": "29528",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Horry Electric Cooperative, SC, 2774 Cultra Road",
+        "formatted_address": "2774 Cultra Rd, Conway, SC 29526, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0796323,
+          33.8725427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "24",
+        "FIPS": "",
+        "Label": "Lynches River Electric Cooperative",
+        "Address": "707 South Arant Street",
+        "State": "SC",
+        "Zip": "29728",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Lynches River Electric Cooperative, SC, 707 South Arant Street",
+        "formatted_address": "707 S Arant St, Pageland, SC 29728, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.40200449999999,
+          34.7602201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "25",
+        "FIPS": "",
+        "Label": "Newberry Electric Cooperative",
+        "Address": "882 Wilson Road",
+        "State": "SC",
+        "Zip": "29108",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Newberry Electric Cooperative, SC, 882 Wilson Road",
+        "formatted_address": "882 Wilson Rd, Newberry, SC 29108, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.591978,
+          34.2784393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "26",
+        "FIPS": "",
+        "Label": "Santee Electric Cooperative",
+        "Address": "424 Sumter Highway",
+        "State": "SC",
+        "Zip": "29556",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Santee Electric Cooperative, SC, 424 Sumter Highway",
+        "formatted_address": "424 Sumter Hwy, Kingstree, SC 29556, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.85277409999999,
+          33.6885138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "27",
+        "FIPS": "",
+        "Label": "Touchstone Energy",
+        "Address": "4301 Wilson Blvd",
+        "State": "VA",
+        "Zip": "22203",
+        "Category": "National Alliance",
+        "Notes": "",
+        "address": "Touchstone Energy, VA, 4301 Wilson Blvd",
+        "formatted_address": "4301 Wilson Blvd, Arlington, VA 22203, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.11298699999999,
+          38.880529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "28",
+        "FIPS": "",
+        "Label": "National Rural Utilities Cooperative Finance Corporation",
+        "Address": "20701 Cooperative Way",
+        "State": "VA",
+        "Zip": "20166",
+        "Category": "Finance",
+        "Notes": "Created and owned by America's electric coop network",
+        "address": "National Rural Utilities Cooperative Finance Corporation, VA, 20701 Cooperative Way",
+        "formatted_address": "20701 Cooperative Way, Sterling, VA 20166, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4267655,
+          39.0415808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "29",
+        "FIPS": "",
+        "Label": "Federated Rural Electric Insurance Exchange",
+        "Address": "P.O. Box 15147",
+        "State": "KS",
+        "Zip": "66285",
+        "Category": "Finance",
+        "Notes": "",
+        "address": "Federated Rural Electric Insurance Exchange, KS, P.O. Box 15147",
+        "formatted_address": "7725 Renner Rd, Shawnee, KS 66217, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.7790594,
+          38.9876327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "30",
+        "FIPS": "",
+        "Label": "National Rural Electric Cooperative Association",
+        "Address": "4301 Wilson Blvd.",
+        "State": "VA",
+        "Zip": "22203",
+        "Category": "National Alliance",
+        "Notes": "",
+        "address": "National Rural Electric Cooperative Association, VA, 4301 Wilson Blvd.",
+        "formatted_address": "4301 Wilson Blvd, Arlington, VA 22203, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.1129086,
+          38.8805334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "31",
+        "FIPS": "",
+        "Label": "Office of Regulatory Staff",
+        "Address": "1401 Main Street",
+        "State": "SC",
+        "Zip": "29201",
+        "Category": "State Government",
+        "Notes": "",
+        "address": "Office of Regulatory Staff, SC, 1401 Main Street",
+        "formatted_address": "1401 Main St #900, Columbia, SC 29201, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.0352106,
+          34.0040058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "32",
+        "FIPS": "",
+        "Label": "Rural Utilities Service (RUS)",
+        "Address": "1400 Independence Avenue, SW",
+        "State": "DC",
+        "Zip": "20250",
+        "Category": "Federal Support",
+        "Notes": "",
+        "address": "Rural Utilities Service (RUS), DC, 1400 Independence Avenue, SW",
+        "formatted_address": "1400 Independence Ave SW, Washington, DC 20228, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.02996329999999,
+          38.8867671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "33",
+        "FIPS": "",
+        "Label": "South Carolina Power Team",
+        "Address": "1201 Main Street, Suite 1710",
+        "State": "SC",
+        "Zip": "29201",
+        "Category": "Economic Development",
+        "Notes": "",
+        "address": "South Carolina Power Team, SC, 1201 Main Street, Suite 1710",
+        "formatted_address": "1201 Main St #250, Columbia, SC 29201, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.0348008,
+          34.0012126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34",
+        "FIPS": "",
+        "Label": "South Carolina Public Service Commission",
+        "Address": "101 Executive Center Drive",
+        "State": "SC",
+        "Zip": "29210",
+        "Category": "State Government",
+        "Notes": "",
+        "address": "South Carolina Public Service Commission, SC, 101 Executive Center Drive",
+        "formatted_address": "101 Executive Center Dr # 100, Columbia, SC 29210, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.1214719,
+          34.0331507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "35",
+        "FIPS": "",
+        "Label": "enLIGHTenSC",
+        "Address": "808 Knox Abbott Drive",
+        "State": "SC",
+        "Zip": "29033",
+        "Category": "Education",
+        "Notes": "",
+        "address": "enLIGHTenSC, SC, 808 Knox Abbott Drive",
+        "formatted_address": "808 Knox Abbott Dr, Cayce, SC 29033, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.06243479999999,
+          33.9825755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "36",
+        "FIPS": "",
+        "Label": "Washinton Youth Tour and Cooperative Youth Summit",
+        "Address": "2799 Richmond Hwy",
+        "State": "VA",
+        "Zip": "22202",
+        "Category": "Youth Development",
+        "Notes": "",
+        "address": "Washinton Youth Tour and Cooperative Youth Summit, VA, 2799 Richmond Hwy",
+        "formatted_address": "Richmond Hwy, Virginia, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.13520869999999,
+          38.7158204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "37",
+        "FIPS": "",
+        "Label": "South Carolina Living",
+        "Address": "808 Knox Abbott Drive",
+        "State": "SC",
+        "Zip": "29210",
+        "Category": "Press",
+        "Notes": "",
+        "address": "South Carolina Living, SC, 808 Knox Abbott Drive",
+        "formatted_address": "808 Knox Abbott Dr, Cayce, SC 29033, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.06243479999999,
+          33.9825755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "38",
+        "FIPS": "",
+        "Label": "Touchstone Energy's Co-op Connections",
+        "Address": "4301 Wilson Blvd",
+        "State": "VA",
+        "Zip": "22203",
+        "Category": "Community Development",
+        "Notes": "Free membership program that provides discounts on food, health services. ",
+        "address": "Touchstone Energy's Co-op Connections, VA, 4301 Wilson Blvd",
+        "formatted_address": "4301 Wilson Blvd, Arlington, VA 22203, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.11298699999999,
+          38.880529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "39",
+        "FIPS": "",
+        "Label": "South Carolina 811",
+        "Address": "810 Dutch Square Blvd.",
+        "State": "SC",
+        "Zip": "29210",
+        "Category": "Infrastructure",
+        "Notes": "Before you dig center for the state for underground utility lines.",
+        "address": "South Carolina 811, SC, 810 Dutch Square Blvd.",
+        "formatted_address": "7316, 810 Dutch Square Blvd, Columbia, SC 29210, United States"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.094522,
+          34.034118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "40",
+        "FIPS": "",
+        "Label": "CoBank",
+        "Address": "6340 S. Fiddlers Green Circle",
+        "State": "CO",
+        "Zip": "80111",
+        "Category": "Finance",
+        "Notes": "",
+        "address": "CoBank, CO, 6340 S. Fiddlers Green Circle",
+        "formatted_address": "1908, 6340 S Fiddlers Green Cir, Greenwood Village, CO 80111, United States"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.891414,
+          39.6034143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "41",
+        "FIPS": "",
+        "Label": "No Barriers",
+        "Address": "224 Canyon Ave, Suite 207",
+        "State": "CO",
+        "Zip": "80521",
+        "Category": "Education",
+        "Notes": "Disabled Veteran Eduation Program",
+        "address": "No Barriers, CO, 224 Canyon Ave, Suite 207",
+        "formatted_address": "224 Canyon Ave Suite #207, Fort Collins, CO 80521, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0808557,
+          40.5852901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "42",
+        "FIPS": "",
+        "Label": "Help My House",
+        "Address": "",
+        "State": "SC",
+        "Zip": "",
+        "Category": "Economic Development",
+        "Notes": "Low cost loans for energy efficiency improvements up to 35% reduction in bills",
+        "address": "Help My House, SC, ",
+        "formatted_address": "7205 Two Notch Rd, Columbia, SC 29223, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.95787469999999,
+          34.0646676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "43",
+        "FIPS": "",
+        "Label": "Energy Smart SC",
+        "Address": "",
+        "State": "SC",
+        "Zip": "",
+        "Category": "Education ",
+        "Notes": "Beat the Peak",
+        "address": "Energy Smart SC, SC, ",
+        "formatted_address": "10 Executive Ct, Clover, SC 29710, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.0453347,
+          35.11037779999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "44",
+        "FIPS": "",
+        "Label": "SC Green Power",
+        "Address": "",
+        "State": "SC",
+        "Zip": "",
+        "Category": "Services",
+        "Notes": "Renewable energy",
+        "address": "SC Green Power, SC, ",
+        "formatted_address": "2998 W Montague Ave Suite 108, North Charleston, SC 29418, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.013324,
+          32.8684662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "45",
+        "FIPS": "",
+        "Label": "U.S. Department of Energy",
+        "Address": "1000 Independence Ave, SW",
+        "State": "DC",
+        "Zip": "20585",
+        "Category": "Federal Support",
+        "Notes": "",
+        "address": "U.S. Department of Energy, DC, 1000 Independence Ave, SW",
+        "formatted_address": "1000 Independence Ave SW, Washington, DC 20585, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0259726,
+          38.8869743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "46",
+        "FIPS": "",
+        "Label": "North Eastern Strategic Alliance ",
+        "Address": "P.O. Box 100547",
+        "State": "SC",
+        "Zip": "29502",
+        "Category": "Regional Economic Development",
+        "Notes": "",
+        "address": "North Eastern Strategic Alliance , SC, P.O. Box 100547",
+        "formatted_address": "121 S Evander Dr, Florence, SC 29506, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.65837619999999,
+          34.1953997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "47",
+        "FIPS": "",
+        "Label": "South Carolina Chamber of Commerce",
+        "Address": "1301 Gervais Street, Suite 1100",
+        "State": "SC",
+        "Zip": "29201",
+        "Category": "State Government",
+        "Notes": "",
+        "address": "South Carolina Chamber of Commerce, SC, 1301 Gervais Street, Suite 1100",
+        "formatted_address": "1301 Gervais St #1100, Columbia, SC 29201, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.031601,
+          34.002201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "48",
+        "FIPS": "",
+        "Label": "South Carolina Department of Commerce",
+        "Address": "1201 Main Street, Suite 1600",
+        "State": "SC",
+        "Zip": "29201",
+        "Category": "State Government",
+        "Notes": "",
+        "address": "South Carolina Department of Commerce, SC, 1201 Main Street, Suite 1600",
+        "formatted_address": "1201 Main St # 1600, Columbia, SC 29201, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.03467479999999,
+          34.0013716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "49",
+        "FIPS": "",
+        "Label": "South Carolina Association of Heating & A/C Contractors",
+        "Address": "PO Box 80265",
+        "State": "SC",
+        "Zip": "29416",
+        "Category": "Services/Construction",
+        "Notes": "",
+        "address": "South Carolina Association of Heating & A/C Contractors, SC, PO Box 80265",
+        "formatted_address": "South Carolina, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.1637245,
+          33.836081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "50",
+        "FIPS": "",
+        "Label": "Hilton Head Island Sea Turtle Protection Project",
+        "Address": "PO Box 23434",
+        "State": "SC",
+        "Zip": "29925",
+        "Category": "Education",
+        "Notes": "",
+        "address": "Hilton Head Island Sea Turtle Protection Project, SC, PO Box 23434",
+        "formatted_address": "Hilton Head Island, SC, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.752608,
+          32.216316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "51",
+        "FIPS": "",
+        "Label": "Discovery Channel School",
+        "Address": "One Discovery Place ",
+        "State": "MD",
+        "Zip": "20910",
+        "Category": "Youth Education ",
+        "Notes": "",
+        "address": "Discovery Channel School, MD, One Discovery Place ",
+        "formatted_address": "1 Discovery Pl, Silver Spring, MD 20910, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0276063,
+          38.9947766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "52",
+        "FIPS": "",
+        "Label": "Santee Cooper",
+        "Address": "1 Riverwood Drive",
+        "State": "SC",
+        "Zip": "29461",
+        "Category": "Distribution",
+        "Notes": "",
+        "address": "Santee Cooper, SC, 1 Riverwood Drive",
+        "formatted_address": "1 Riverwood Dr, Moncks Corner, SC 29461, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9805852,
+          33.199181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "53",
+        "FIPS": "",
+        "Label": "Congaree National Park",
+        "Address": "100 National Park Road",
+        "State": "SC",
+        "Zip": "29061",
+        "Category": "Press",
+        "Notes": "Green Power Partner",
+        "address": "Congaree National Park, SC, 100 National Park Road",
+        "formatted_address": "Congaree National Park, 100 National Park Rd, Hopkins, SC 29061, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.7424377,
+          33.787132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "54",
+        "FIPS": "",
+        "Label": "Starbucks Coffee",
+        "Address": "2401 Utah Ave S, 8th floor",
+        "State": "WA",
+        "Zip": "98134",
+        "Category": "Press",
+        "Notes": "Green Power Partner",
+        "address": "Starbucks Coffee, WA, 2401 Utah Ave S, 8th floor",
+        "formatted_address": "2401 Utah Ave S 8th floor, Seattle, WA 98134, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3353619,
+          47.5807515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "55",
+        "FIPS": "",
+        "Label": "Operation Round-Up",
+        "Address": "",
+        "State": "",
+        "Zip": "",
+        "Category": "Community Development",
+        "Notes": "Rounds up bills to help others in community who are struggling with finances. Need to get info on projects funded from operation round up",
+        "address": "Operation Round-Up, , "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "56",
+        "FIPS": "",
+        "Label": "Palmetto Economic Development Coorporation ",
+        "Address": "1201 Main Street, Ste 1710",
+        "State": "SC",
+        "Zip": "29201",
+        "Category": "Economic Development",
+        "Notes": "",
+        "address": "Palmetto Economic Development Coorporation , SC, 1201 Main Street, Ste 1710",
+        "formatted_address": "1201 Main St #250, Columbia, SC 29201, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.0348008,
+          34.0012126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "57",
+        "FIPS": "",
+        "Label": "WIRE (Women Involved in Rural Electrification) ",
+        "Address": "",
+        "State": "SC",
+        "Zip": "",
+        "Category": "Community Development",
+        "Notes": "",
+        "address": "WIRE (Women Involved in Rural Electrification) , SC, ",
+        "formatted_address": "South Carolina, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.1637245,
+          33.836081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "58",
+        "FIPS": "",
+        "Label": "Alliance Park Anderson County ",
+        "Address": "411 Alliance Pkwy",
+        "State": "SC",
+        "Zip": "29621",
+        "Category": "Power Site",
+        "Notes": "Industrial park power site",
+        "address": "Alliance Park Anderson County , SC, 411 Alliance Pkwy",
+        "formatted_address": "411 Alliance Pkwy, Anderson, SC 29621, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.5997008,
+          34.6288825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "59",
+        "FIPS": "",
+        "Label": "Golden Corner",
+        "Address": "Hwy 59 Cleveland Creek Rd",
+        "State": "SC",
+        "Zip": "29643",
+        "Category": "Power Site",
+        "Notes": "Industrial park power site",
+        "address": "Golden Corner, SC, Hwy 59 Cleveland Creek Rd",
+        "formatted_address": "SC-59 & Cleveland Creek Rd, Fair Play, SC 29643, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.98828999999999,
+          34.5181759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "60",
+        "FIPS": "",
+        "Label": "TTI",
+        "Address": "100 Ryobi Drive",
+        "State": "SC",
+        "Zip": "29621",
+        "Category": "Power Site",
+        "Notes": "Industrial park power site",
+        "address": "TTI, SC, 100 Ryobi Drive",
+        "formatted_address": "100 Ryobi Drive, Anderson, SC 29621, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.61178079999999,
+          34.6324708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "61",
+        "FIPS": "",
+        "Label": "Alliance Park Pickens",
+        "Address": "1390 Smith Grove Rd",
+        "State": "SC",
+        "Zip": "29657",
+        "Category": "Power Site",
+        "Notes": "Industrial park power site",
+        "address": "Alliance Park Pickens, SC, 1390 Smith Grove Rd",
+        "formatted_address": "1390 Smith Grove Rd, Liberty, SC 29657, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.6549058,
+          34.7925605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "62",
+        "FIPS": "",
+        "Label": "OITP",
+        "Address": "4271 SC-11",
+        "State": "SC",
+        "Zip": "29693",
+        "Category": "Power Site",
+        "Notes": "Industrial park power site",
+        "address": "OITP, SC, 4271 SC-11",
+        "formatted_address": "4271 SC-11, Westminster, SC 29693, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.0478744,
+          34.6972629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "63",
+        "FIPS": "",
+        "Label": "South Carolina I-77 Alliiance",
+        "Address": "3200 Commerce Dr., Suite D",
+        "State": "SC",
+        "Zip": "29729",
+        "Category": "Economic Development",
+        "Notes": "",
+        "address": "South Carolina I-77 Alliiance, SC, 3200 Commerce Dr., Suite D",
+        "formatted_address": "3200 Commerce Dr, Richburg, SC 29729, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.034353,
+          34.749939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "64",
+        "FIPS": "",
+        "Label": "York County Economic Development",
+        "Address": "1830 2nd Baxter Crossing ",
+        "State": "SC",
+        "Zip": "29708",
+        "Category": "Economic Development",
+        "Notes": "",
+        "address": "York County Economic Development, SC, 1830 2nd Baxter Crossing ",
+        "formatted_address": "1830 2nd Baxter Crossing, Fort Mill, SC 29708, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.96903999999999,
+          35.029472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "65",
+        "FIPS": "",
+        "Label": "Colleton Solar Farm",
+        "Address": "1751 Hiers Corner Road",
+        "State": "SC",
+        "Zip": "29488",
+        "Category": "Solar",
+        "Notes": "Solar Farm",
+        "address": "Colleton Solar Farm, SC, 1751 Hiers Corner Road",
+        "formatted_address": "1751 Hiers Corner Rd, Walterboro, SC 29488, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.6943798,
+          32.9111571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "66",
+        "FIPS": "",
+        "Label": "MySCSolar",
+        "Address": "808 Knox Abbot Drive",
+        "State": "SC",
+        "Zip": "29033",
+        "Category": "Solar",
+        "Notes": "",
+        "address": "MySCSolar, SC, 808 Knox Abbot Drive",
+        "formatted_address": "South Carolina, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.1637245,
+          33.836081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "67",
+        "FIPS": "",
+        "Label": "Carolina Connect",
+        "Address": "P.O. Box 1667",
+        "State": "SC",
+        "Zip": "29071",
+        "Category": "Internet",
+        "Notes": "",
+        "address": "Carolina Connect, SC, P.O. Box 1667"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "68",
+        "FIPS": "",
+        "Label": "Chesterfield County Economic Development Board",
+        "Address": "105 Green Street",
+        "State": "SC",
+        "Zip": "29709",
+        "Category": "Economic Development",
+        "Notes": "",
+        "address": "Chesterfield County Economic Development Board, SC, 105 Green Street",
+        "formatted_address": "105 Green St, Chesterfield, SC 29709, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.0853352,
+          34.7364514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "69",
+        "FIPS": "",
+        "Label": "Clarendon County Development Board",
+        "Address": "411 Sunset Dr",
+        "State": "SC",
+        "Zip": "29102",
+        "Category": "Economic Development",
+        "Notes": "",
+        "address": "Clarendon County Development Board, SC, 411 Sunset Dr",
+        "formatted_address": "Clarendon County Administration Building, 411 Sunset Dr, Manning, SC 29102, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.2222845,
+          33.6878753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "70",
+        "FIPS": "",
+        "Label": "Kershaw County Economic Development Office",
+        "Address": "80 Campus Dr. ",
+        "State": "SC",
+        "Zip": "29021",
+        "Category": "Economic Development",
+        "Notes": "",
+        "address": "Kershaw County Economic Development Office, SC, 80 Campus Dr. ",
+        "formatted_address": "95 Innovation Way, Camden, SC 29020, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.58685469999999,
+          34.2194027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "71",
+        "FIPS": "",
+        "Label": "Florence County Economic Development Partnership",
+        "Address": "1951 Pisgah Road",
+        "State": "SC",
+        "Zip": "29501",
+        "Category": "Economic Development",
+        "Notes": "",
+        "address": "Florence County Economic Development Partnership, SC, 1951 Pisgah Road",
+        "formatted_address": "SiMT Incubator Building, 1951 Pisgah Rd #120, Florence, SC 29501, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.8043486,
+          34.2485438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "72",
+        "FIPS": "",
+        "Label": "Georgetown County Economic Development",
+        "Address": "716 Prince St",
+        "State": "SC",
+        "Zip": "29440",
+        "Category": "Economic Development",
+        "Notes": "",
+        "address": "Georgetown County Economic Development, SC, 716 Prince St",
+        "formatted_address": "716 Prince St, Georgetown, SC 29440, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.28159079999999,
+          33.3673749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "73",
+        "FIPS": "",
+        "Label": "Williamsburg County Economic Development Board",
+        "Address": "130 West Main Street",
+        "State": "SC",
+        "Zip": "29556",
+        "Category": "Economic Development",
+        "Notes": "",
+        "address": "Williamsburg County Economic Development Board, SC, 130 West Main Street",
+        "formatted_address": "130 W Main St, Kingstree, SC 29556, USA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.83129199999999,
+          33.6639194
+        ]
+      }
+    }
+  ]
+}

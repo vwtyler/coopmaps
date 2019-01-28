@@ -58,11 +58,9 @@ circle {
 var w = 1280,
     h = 800;
 
-var projection = d3.geoAlbers
-  //  .mode("equidistant")
-    //.origin([-98, 38])
-  //  .scale(1400)
-  //  .translate([640, 360]);
+var projection = d3.geoAlbers()
+    .scale(1280)
+    .translate([480, 300])
 
 var path = d3.geoPath()
     .projection(projection);

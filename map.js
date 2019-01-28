@@ -1,8 +1,4 @@
-<script type="text/javascript" src="d3/d3.js"></script>
-<script type="text/javascript" src="d3/d3.csv.js"></script>
-<script type="text/javascript" src="d3/d3.geo.js"></script>
-<script type="text/javascript" src="d3/d3.geom.js"></script>
-<script type="text/javascript">
+//javascript
 
 var w = 1280,
 h = 800;

@@ -1,46 +1,63 @@
 // javascript
-//var dataset = [80, 100, 56, 120, 180, 30, 40, 120, 160];
-var dataset = [1,2,3,4,5];
+data = d3.csv("sc_nodes-geocoded.csv", d => ({
+  type: "Feature",
+  properties: d,
+  geometry: {
+    type: "Point",
+    coordinates: [+d.lng, +d.lat]
+  }
+}))
 
-var svgWidth = 500, svgHeight = 300, barPadding = 5;
-var barWidth = (svgWidth / dataset.length);
+projection = d3.geoAlbers()
+    .scale(1280)
+    .translate([480, 300]);
 
-var svg = d3.select('svg')
-    .attr("width", svgWidth)
-    .attr("height", svgHeight);
 
-var yScale = d3.scaleLinear()
-    .domain([0, d3.max(dataset)])
-    .range([0, svgHeight]);
 
-var barChart = svg.selectAll("rect")
-    .data(dataset)
-    .enter()
-    .append("rect")
-    .attr("y", function(d) {
-        return svgHeight - yScale(d)
-    })
-    .attr("height", function(d) {
-        return yScale(d);
-    })
-    .attr("width", barWidth - barPadding)
-    .attr("class", "bar")
-    .attr("transform", function (d, i) {
-        var translate = [barWidth * i, 0];
-        return "translate("+ translate +")";
-    });
+// topojson = require("topojson-client@3");
 
-var text = svg.selectAll("text")
-    .data(dataset)
-    .enter()
-    .append("text")
-    .text(function(d) {
-        return d;
-    })
-    .attr("y", function(d, i) {
-        return svgHeight - yScale(d) - 2;
-    })
-    .attr("x", function(d, i) {
-        return barWidth * i;
-    })
-    .attr("fill", "#A64C38");
+// d3 = require("d3@5", "d3-geo-voronoi@1");
+
+
+var svg = d3.select("body").append("svg")
+      .attr("width", 960)
+      .attr("height", 500)
+      .style("width", "100%")
+      .style("height", "auto");
+
+d3.json("https://unpkg.com/us-atlas@1/us/10m.json"), function(error, us) {
+  if (error) throw console.error();
+
+  svg.append("path")
+      .datum(topojson.merge(us, us.objects.states.geometries.filter(d => d.id !== "02" && d.id !== "15")))
+      .attr("fill", "#ddd")
+      .attr("d", d3.geoPath());
+
+  svg.append("path")
+      .datum(topojson.mesh(us, us.objects.states, (a, b) => a !== b))
+      .attr("fill", "none")
+      .attr("stroke", "white")
+      .attr("stroke-linejoin", "round")
+      .attr("d", d3.geoPath());
+
+  svg.append("g")
+      .attr("fill", "none")
+      .attr("stroke", "red")
+      .attr("pointer-events", "all")
+    .selectAll("path")
+    .data(d3.geoVoronoi().polygons(data).features)
+    .enter().append("path")
+      .attr("d", d3.geoPath(projection))
+    .append("title")
+      .text(d => {
+        const p = d.properties.site.properties;
+        return `${p.name} Airport
+${p.city}, ${p.state}`;
+      });
+
+  svg.append("path")
+      .datum({type: "FeatureCollection", features: data})
+      .attr("d", d3.geoPath(projection).pointRadius(1.5));
+
+  return svg.node();
+}
