@@ -1,3 +1,12 @@
 node_modules
 .env
 schema.ini
+.Rproj.user
+*.shp
+*.dbf
+*.idx
+*.prj
+*.shx
+*.sbx
+*.sbn
+*.cpg
