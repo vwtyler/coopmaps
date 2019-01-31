@@ -1,8 +1,14 @@
 ---
-title: "index"
+title: "Central Electric Power Cooperative Mapping Space"
 author: "Tyler Jackson"
 date: "1/30/2019"
-output: html_document
+output: 
+  html_document:
+    theme: journal
+    code_folding: show
+    toc: true
+    toc_float: true
+  
 ---
 
 ```{r setup, include=FALSE}
@@ -14,18 +20,24 @@ library(ggplot2)
 library(stringr)
 ```
 
-```{r}
+```{r echo=FALSE}
 coops <- read.csv("sc_nodes-geocoded.csv", sep = ",")
-names(coops)
+#names(coops)
 
 coops.sf <- st_as_sf(x = coops[!is.na(coops$lat),], 
                         coords = c("lng", "lat"),
                         crs = "+proj=longlat +datum=WGS84")
 
+
+```
+
+
+## Map of Central Electric Power Cooperative Network Nodes
+```{r echo=FALSE}
 mapview(coops.sf, zcol = "Category", legend = FALSE)
 ```
 
-```{r}
+```{r echo=FALSE, results="hide"}
 unzip("./map.data/SC Electric Coop Territorial.zip", exdir = "./map.data")
 #read names of directory
 f <- list.files("/Users/tyler/Dropbox/_GSR/d3sc/central/map.data")
@@ -46,6 +58,10 @@ territories <- do.call(rbind, territories)
 #   geom_sf(data=territories,
 #           aes(fill=name))
 
+
+```
+## Map of Central Electric Nodes and Service Territories
+```{r echo=FALSE}
 mapview(coops.sf, zcol = "Category", legend = FALSE) + territories
 ```
 
