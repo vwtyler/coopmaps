@@ -1,0 +1,52 @@
+---
+title: "index"
+author: "Tyler Jackson"
+date: "1/30/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(mapview)
+library(rgdal)
+library(sf)
+library(ggplot2)
+library(stringr)
+```
+
+```{r}
+coops <- read.csv("sc_nodes-geocoded.csv", sep = ",")
+names(coops)
+
+coops.sf <- st_as_sf(x = coops[!is.na(coops$lat),], 
+                        coords = c("lng", "lat"),
+                        crs = "+proj=longlat +datum=WGS84")
+
+mapview(coops.sf, zcol = "Category", legend = FALSE)
+```
+
+```{r}
+unzip("./map.data/SC Electric Coop Territorial.zip", exdir = "./map.data")
+#read names of directory
+f <- list.files("/Users/tyler/Dropbox/_GSR/d3sc/central/map.data")
+f <- f[grepl("\\.shp", f, perl = T)]
+#apply or for to st_read *.shp l or 
+territories <- lapply(f, function(x){
+  t <- st_read(file.path("/Users/tyler/Dropbox/_GSR/d3sc/central/map.data", x))
+  t <- t["geometry"]
+  t$name <- rep(sub("\\.shp", "", x, perl=T), nrow(t))
+  st_transform(t, crs= 4326)
+})
+
+
+territories <- do.call(rbind, territories)
+
+# quick map with ggplot, works!
+# ggplot() +
+#   geom_sf(data=territories,
+#           aes(fill=name))
+
+mapview(coops.sf, zcol = "Category", legend = FALSE) + territories
+```
+
+
