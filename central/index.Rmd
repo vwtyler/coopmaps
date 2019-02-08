@@ -66,3 +66,87 @@ mapview(coops.sf, zcol = "Category", legend = FALSE) + territories
 ```
 
 
+## Create network maps
+```{r}
+#loading the package:
+library(igraph)
+#Read the network data:
+net <- read.csv("edges.csv")
+#Read the node attribute data
+node_attrib <- coops
+#we will convert the id to a character for later manipulation:
+node_attrib$idch <- as.character(node_attrib$ID)
+```
+
+```{r}
+g1 <- graph.data.frame(net, directed = T)
+#we can print a summary of the network to see tha attributes and number of edges and nodes:
+summary(g1)
+
+poss <- match(V(g1)$name,node_attrib$idch)
+V(g1)$lat <- node_attrib$lat[poss]
+V(g1)$long <- node_attrib$lng[poss]
+V(g1)$type <- as.character(node_attrib$Category[poss])
+V(g1)$fullname <- as.character(node_attrib$Label[poss])
+#if we ask for the summary again we can see the added attributes:
+summary(g1)
+```
+
+
+The centrality measures can be helpful to describe the network and find nodes that could be interesting.  Here we compute some centrality measures and we add it to the network:
+```{r}
+#centrality measures for the full network (no loops)
+indeg <- degree(g1, v=V(g1), mode=c("in"),loops=FALSE)
+outdeg <- degree(g1, v=V(g1), mode=c("out"),loops=FALSE)
+
+indegN <- degree(g1, v=V(g1), mode=c("in"),loops=FALSE, normalized=TRUE)
+outdegN <- degree(g1, v=V(g1), mode=c("out"),loops=FALSE,normalized=TRUE)
+
+inclose <- closeness(g1, v=V(g1), mode = ("in"))
+outclose <- closeness(g1, v=V(g1), mode = ("out"))
+bet <- betweenness(g1, v=V(g1), directed = TRUE)
+betN <- bet/max(bet)
+
+## add centrality measures to node attributes
+V(g1)$indeg <- indeg
+V(g1)$outdeg <- outdeg
+V(g1)$indegN <- indegN
+V(g1)$outdegN <- outdegN
+V(g1)$inclose <- inclose
+V(g1)$outclose <- outclose
+V(g1)$bet <- bet
+V(g1)$betN <- betN
+
+```
+```{r}
+plot(g1, layout = layout_components, vertex.label = NA, vertex.size = 5, edge.arrow.size = .4)
+```
+
+```{r}
+par(mfrow=c(1,1),mar=c(0,0,0,0))
+colpal <- c("red", "blue", "yellow", "green", "orange")
+plot(g1, layout = layout_components, vertex.size = 10, edge.arrow.size = .4, vertex.color = colpal[factor(V(g1)$type)])
+legend("bottomleft", legend = levels(factor(V(g1)$type)), col = colpal, pch = 16, bty = "n")
+```
+
+```{r}
+#basic plotting the network on a map
+library(maps)
+data(countyMapEnv)
+par(mfrow=c(1,1), mar=c(0,0,0,0))
+map('county', 'south carolina')
+
+latex <- matrix(c(V(g1)$long, V(g1)$lat), ncol=2)
+
+plot(g1, layout=latex,
+     add = TRUE,
+     rescale = FALSE,
+     edge.arrow.size=.4,
+     edge.color="purple",
+     vertex.size=10, 
+     vertex.color=colpal[factor(V(g1)$type)],
+     edge.curved=.3,
+     vertex.label=NA
+)
+```
+
