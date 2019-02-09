@@ -61,7 +61,7 @@ territories <- do.call(rbind, territories)
 
 ```
 ## Map of Central Electric Nodes and Service Territories
-```{r echo=FALSE}
+```{r eval=FALSE, include=FALSE}
 mapview(coops.sf, zcol = "Category", legend = FALSE) + territories
 ```
 
