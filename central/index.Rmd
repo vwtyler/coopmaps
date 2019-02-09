@@ -127,7 +127,7 @@ plot(g1, layout = layout_components, vertex.label = NA, vertex.size = 5, edge.ar
 ```
 ###The Whole Network
 
-This graph represents the South Carolina Electric Cooperative Netowrk. Through various methods of data collection we have identified 73 nodes inside and outside of South Carolina that represent different types of business and development. Those nodes have been colored by category. The things seen toward the center of the graph have a high amount of connections, that is, they are central to the network, while those found toward the outside of graph have low connections, meaning they are close to being independent of the network. For further exploration, we'll look at the network in a few different ways.
+This graph represents the South Carolina Electric Cooperative Network. Through various methods of data collection we have identified 73 nodes inside and outside of South Carolina that represent different types of business and development. Those nodes have been colored by category. The things seen toward the center of the graph have a high amount of connections, that is, they are central to the network, while those found toward the outside of graph have low connections, meaning they are close to being independent of the network. For further exploration, we'll look at the network in a few different ways.
 
 ```{r echo=FALSE}
 par(mfrow=c(1,1),mar=c(0,3,1,0))
@@ -195,7 +195,7 @@ legend("bottomleft", legend = levels(factor(V(g.dist)$type)), col = rainbow(12),
 
 ###Spatial Network
 
-Below, we see that the network can also be visualised spatially, that is, we can map it! This might be useful when thinking about how programs might be able to link together by location. If one node is close to another node but they aren't connected, we can ask, why not? This can provide more insight about how to work for even better cooperation.
+Below, we see that the network can also be visualized spatially, that is, we can map it! This might be useful when thinking about how programs might be able to link together by location. If one node is close to another node but they aren't connected, we can ask, why not? This can provide more insight about how to work for even better cooperation.
 
 ```{r echo=FALSE}
 #basic plotting the network on a map
