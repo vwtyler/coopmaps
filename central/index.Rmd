@@ -1,6 +1,9 @@
 ---
 title: "Central Electric Power Cooperative Network"
-author: "Tyler Jackson, UC Davis Community Economic Development Lab"
+author: 
+- Tyler Jackson
+- Katelin Jones
+- UC Davis Community Economic Development Lab
 output: 
   html_document:
     theme: journal
