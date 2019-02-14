@@ -225,9 +225,12 @@ legend("bottomleft", legend = levels(factor(V(g.state)$type)), col = rainbow(12)
        pch = 16, bty = "n", title = "Node Type", inset=c(-0.2,0))
 
 ```
-```{r}
+
+
+```{r eval=FALSE, include=FALSE}
 library(networkD3)
 
+#create D3 force directed graph test
 g1.mem <- igraph::membership(igraph::cluster_walktrap(g1))
 g1.d3 <- igraph_to_networkD3(g1, group = g1.mem)
 
@@ -235,5 +238,22 @@ g1.d3 <- igraph_to_networkD3(g1, group = g1.mem)
 forceNetwork(Links = g1.d3$links, Nodes = g1.d3$nodes, 
              Source = 'source', Target = 'target', 
              NodeID = 'name', Group = 'group', zoom = FALSE, legend = FALSE)
+```
+
+
+```{r}
+#D3 mapping?
+library(r2d3maps)
+library(maps)
+library(rnaturalearth) #countries
+
+par(mfrow=c(1,1), mar=c(0,0,0,0))
+#us.sf <- ne_states(country = "united states of america", returnclass = "sf")
+states <- st_as_sf(map('state', plot = FALSE, fill = TRUE))
+
+d3_map(shape = states, projection = "Albers") %>%
+   add_tooltip()
+
+
 ```
 
