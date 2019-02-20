@@ -241,7 +241,7 @@ forceNetwork(Links = g1.d3$links, Nodes = g1.d3$nodes,
 ```
 
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 #D3 mapping?
 library(r2d3maps)
 library(maps)
