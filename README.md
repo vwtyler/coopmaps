@@ -18,8 +18,8 @@ Package list in development.
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
-* **Tyler Jackson** - *CED Lab Revised* - [vwtyler](https://github.com/vwtyler)
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Tyler Jackson** - *Initial Work* - [vwtyler](https://github.com/vwtyler)
+* 
 
 See also the list of [contributors](https://github.com/vwtyler/coopmaps/contributors) who participated in this project.
 
@@ -30,5 +30,4 @@ This project is licensed under the CC-BY-SA-4.0 license - see the [LICENSE](LICE
 ## Acknowledgments
 
 * Thanks to **Zeke Sikelianos** for always inspiring me to learn more - [zeke](https://github.com/zeke)
-* Inspiration
-* etc
+* Thanks to **Billie Thompson** for the README template - [PurpleBooth](https://github.com/PurpleBooth)
