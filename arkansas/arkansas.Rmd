@@ -73,8 +73,15 @@ plot(g1, layout = layout_components, vertex.label = NA, vertex.size = 5, edge.ar
 ```
 
 
-
+# The Whole Network
 ```{r}
+par(mfrow=c(1,1),mar=c(0,3,1,0))
+colpal <- c("red", "blue", "yellow", "green", "orange")
+plot(g1, layout = layout_components, vertex.size = 11, edge.arrow.size = .4, 
+     vertex.color = rainbow(12)[factor(V(g1)$type)],
+     main = "Arkansas Electric Cooperative Network")
+legend("bottomleft", legend = levels(factor(V(g1)$type)), col = rainbow(12),
+       pch = 16, bty = "n", title = "Node Type", inset=c(-0.1,0))
 
 ```
 
