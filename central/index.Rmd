@@ -23,11 +23,12 @@ library(stringr)
 ```
 
 ```{r echo=FALSE}
-coops <- read.csv("sc_nodes_v2-geocoded.csv", sep = ",")
+coops <- read.csv("nodes_categorized.csv", sep = ",")
 #names(coops)
+coops$lon <- coops$lng
 
 coops.sf <- st_as_sf(x = coops[!is.na(coops$lat),], 
-                        coords = c("lng", "lat"),
+                        coords = c("lon", "lat"),
                         crs = "+proj=longlat +datum=WGS84")
 
 
@@ -41,7 +42,7 @@ coops.sf <- st_as_sf(x = coops[!is.na(coops$lat),],
 This map presents a starting point for exploring Central Electric's network. It is an interactive view of each node that we have identified as part of the larger cooperative network.
 
 ```{r echo=FALSE}
-mapview(coops.sf, zcol = "Category", legend = FALSE)
+mapview(coops.sf, zcol = "cat2", legend = TRUE)
 ```
 
 ***
@@ -49,23 +50,25 @@ mapview(coops.sf, zcol = "Category", legend = FALSE)
 ```{r eval=FALSE, include=FALSE, results="hide"}
 unzip("./map.data/SC Electric Coop Territorial.zip", exdir = "./map.data")
 #read names of directory
-f <- list.files("/Users/tyler/Dropbox/_GSR/d3sc/central/map.data")
+f <- list.files("./map.data")
 f <- f[grepl("\\.shp", f, perl = T)]
 #apply or for to st_read *.shp l or 
 territories <- lapply(f, function(x){
-  t <- st_read(file.path("/Users/tyler/Dropbox/_GSR/d3sc/central/map.data", x))
+  t <- st_read(file.path("./map.data", x))
   t <- t["geometry"]
   t$name <- rep(sub("\\.shp", "", x, perl=T), nrow(t))
   st_transform(t, crs= 4326)
 })
 
 
+
 territories <- do.call(rbind, territories)
 
+
 # quick map with ggplot, works!
-# ggplot() +
-#   geom_sf(data=territories,
-#           aes(fill=name))
+ggplot() +
+  geom_sf(data=territories,
+          aes(fill=name))
 
 
 ```
@@ -93,9 +96,12 @@ g1 <- graph.data.frame(net, directed = T)
 poss <- match(V(g1)$name,node_attrib$idch)
 V(g1)$lat <- node_attrib$lat[poss]
 V(g1)$long <- node_attrib$lng[poss]
-V(g1)$type <- as.character(node_attrib$Category[poss])
+V(g1)$cat1 <- as.character(node_attrib$cat1[poss])
+V(g1)$cat2 <- as.character(node_attrib$cat2[poss])
+V(g1)$cat3 <- as.character(node_attrib$cat3[poss])
 V(g1)$fullname <- as.character(node_attrib$Label[poss])
 V(g1)$state <- as.character(node_attrib$State[poss])
+
 #if we ask for the summary again we can see the added attributes:
 #summary(g1)
 ```
@@ -105,7 +111,7 @@ V(g1)$state <- as.character(node_attrib$State[poss])
 #centrality measures for the full network (no loops)
 indeg <- degree(g1, v=V(g1), mode=c("in"),loops=FALSE)
 outdeg <- degree(g1, v=V(g1), mode=c("out"),loops=FALSE)
-
+alldeg <- degree(g1, v=V(g1), mode=c("all"),loops=FALSE)
 indegN <- degree(g1, v=V(g1), mode=c("in"),loops=FALSE, normalized=TRUE)
 outdegN <- degree(g1, v=V(g1), mode=c("out"),loops=FALSE,normalized=TRUE)
 
@@ -123,10 +129,10 @@ V(g1)$inclose <- inclose
 V(g1)$outclose <- outclose
 V(g1)$bet <- bet
 V(g1)$betN <- betN
-
+V(g1)$alldeg <- alldeg
 ```
 ```{r eval=FALSE, include=FALSE}
-plot(g1, layout = layout_components, vertex.label = NA, vertex.size = 5, edge.arrow.size = .4)
+plot(g1, layout = layout_components, vertex.label = NA, vertex.size = alldeg, edge.arrow.size = .4)
 ```
 ###The Whole Network
 
@@ -136,9 +142,9 @@ This graph represents the South Carolina Electric Cooperative Network. Through v
 par(mfrow=c(1,1),mar=c(0,3,1,0))
 colpal <- c("red", "blue", "yellow", "green", "orange")
 plot(g1, layout = layout_components, vertex.size = 11, edge.arrow.size = .4, 
-     vertex.color = rainbow(12)[factor(V(g1)$type)],
+     vertex.color = rainbow(12)[factor(V(g1)$cat2)],
      main = "South Carolina Electric Cooperative Network")
-legend("bottomleft", legend = levels(factor(V(g1)$type)), col = rainbow(12),
+legend("bottomleft", legend = levels(factor(V(g1)$cat2)), col = rainbow(12),
        pch = 16, bty = "n", title = "Node Type", inset=c(-0.1,0))
 ```
 
@@ -154,9 +160,9 @@ sel.central <- ego(g1, order = 1, nodes = V(g1)[1], mode = "all", mindist = 0)
 g.central <- induced_subgraph(g1, unlist(sel.central))
 par(mfrow=c(1,1),mar=c(0,3,1,0))
 plot(g.central, layout = layout_components, vertex.size = 12, edge.arrow.size = .4, 
-     vertex.color = rainbow(10)[factor(V(g.central)$type)],
+     vertex.color = rainbow(10)[factor(V(g.central)$cat2)],
      main = "Central Electric Power Cooperative Network")
-legend("bottomleft", legend = levels(factor(V(g.central)$type)), col = rainbow(10),
+legend("bottomleft", legend = levels(factor(V(g.central)$cat2)), col = rainbow(10),
        pch = 16, bty = "n", title = "Node Type", inset=c(-0.1,0))
 ```
 
@@ -166,14 +172,14 @@ The graph below shows all nodes within one level of a distribution cooperative. 
 
 ```{r echo=FALSE}
 #get each Distribution network's graph
-sel.dnodes <- ego(g1, order = 1, nodes = V(g1)[type == "Distribution"], mode = "all", mindist = 0)
+sel.dnodes <- ego(g1, order = 1, nodes = V(g1)[cat2 == "Distribution"], mode = "all", mindist = 0)
 
 g.dnodes <- induced_subgraph(g1, unlist(sel.dnodes))
 par(mfrow=c(1,1),mar=c(0,3,1,0))
 plot(g.dnodes, layout = layout_components, vertex.size = 12, edge.arrow.size = .4, 
-     vertex.color = rainbow(12)[factor(V(g.dnodes)$type)],
+     vertex.color = rainbow(12)[factor(V(g.dnodes)$cat2)],
      main = "Distribution Cooperative Network")
-legend("bottomleft", legend = levels(factor(V(g.dnodes)$type)), col = rainbow(12),
+legend("bottomleft", legend = levels(factor(V(g.dnodes)$cat2)), col = rainbow(12),
        pch = 16, bty = "n", title = "Node Type", inset=c(-0.1,0))
 ```
 
@@ -183,16 +189,16 @@ In this graph, we see one individual distribution cooperative, Santee. It's inte
 
 ```{r echo=FALSE}
 #get name of Node
-#V(g1)$fullname[26]
+V(g1)$fullname[10]
 #create one distro network
-sel.dist <- ego(g1, order = 1, nodes = V(g1)[26], mode = "all", mindist = 0)
+sel.dist <- ego(g1, order = 1, nodes = V(g1)[10], mode = "all", mindist = 0)
 
 g.dist <- induced_subgraph(g1, unlist(sel.dist))
 par(mfrow=c(1,1), mar=c(0,3,1,0))
 plot(g.dist, layout = layout_components, vertex.size = 14, edge.arrow.size = .4, 
-     vertex.color = rainbow(12)[factor(V(g.dist)$type)],
-     main = "Santee Electric Cooperative Network")
-legend("bottomleft", legend = levels(factor(V(g.dist)$type)), col = rainbow(12),
+     vertex.color = rainbow(12)[factor(V(g.dist)$cat2)],
+     main = "Blue Ridge Electric Cooperative Network")
+legend("bottomleft", legend = levels(factor(V(g.dist)$cat2)), col = rainbow(12),
        pch = 16, bty = "n", title = "Node Type", inset=c(-0.1,0))
 ```
 
@@ -217,11 +223,11 @@ plot(g.state, layout=latex,
      edge.arrow.size=.4,
      edge.color="purple",
      vertex.size=10, 
-     vertex.color=rainbow(12)[factor(V(g.state)$type)],
+     vertex.color=rainbow(12)[factor(V(g.state)$cat2)],
      edge.curved=.3,
      vertex.label=NA)
 title("South Carolina Electric Cooperative Network")
-legend("bottomleft", legend = levels(factor(V(g.state)$type)), col = rainbow(12),
+legend("bottomleft", legend = levels(factor(V(g.state)$cat2)), col = rainbow(12),
        pch = 16, bty = "n", title = "Node Type", inset=c(-0.2,0))
 
 ```
@@ -257,3 +263,86 @@ d3_map(shape = states, projection = "Albers") %>%
 
 ```
 
+
+```{r}
+library(ggmap)
+plot_vector <- as.data.frame(cbind(V(g1)$long,V(g1)$lat))
+
+plot_vector$cat2 <- V(g1)$cat2
+                
+edgelist <- get.edgelist(g1)
+
+edgelist
+edgelist[,1]<- as.numeric(match(edgelist[,1],V(g1)$name))
+edgelist[,2]<- as.numeric(match(edgelist[,2],V(g1)$name))
+
+
+
+edges <- data.frame(plot_vector[edgelist[,1],], plot_vector[edgelist[,2],], as.character(E(g1)$Label))
+
+edgebtwn <- edge.betweenness(g1)
+
+str(edgebtwn)
+colnames(edges) <- c("X1","Y1","X2","Y2", "label")
+
+edges$label <- as.character(edges$label)
+
+edges$label <- factor(edges$label)
+head(edges)
+
+levels(edges$label)
+
+typeof(edges$label.f)
+
+#this code gets a pretty map for using ggmap
+sc <- get_map(location = c(bottom = 32.0333099365234, 
+                           top = 35.2155418395996, 
+                           left = -83.35400390625, 
+                           right = -78.4992980957031),
+               source = "stamen",
+               maptype = "terrain",
+               zoom = 7)
+
+plot_vector$V1 <- as.numeric(plot_vector$V1)
+plot_vector$V2 <- as.numeric(plot_vector$V2)
+
+
+ggmap(sc, darken = c(.5,"#FFFFFF")) + 
+  geom_segment(aes(x=X1, y=Y1, xend = X2, yend = Y2), 
+               color = "dark grey", 
+               data = edges, 
+               size = BBmisc::normalize(edgebtwn, method = "range", range = c(0.5,1)), 
+               alpha = BBmisc::normalize(edgebtwn, method = "range", range = c(0.25,1))) +
+  geom_point(aes(V1, V2, color = cat2), 
+             size = sqrt(alldeg), 
+             data = plot_vector, 
+             alpha = 0.5) 
+
+sc_map <- ggmap(sc, darken = c(.5,"#FFFFFF"))
+```
+
+FIRST.... Depict first tier distribution co-op within its service territory, itself depicted with the state of South Carolina. Id like to see one electric co-op service territory boldened. Let's focus on a co-op that has a lot of programs.
+```{r}
+sc_map +
+  geom_point(aes(lon, lat), data = coops[coops$ID == 10,]) +
+  geom_sf(data = territories[territories$name == "Blueridge Territorial",], inherit.aes = FALSE)
+
+coops[coops$ID == 10,]
+```
+
+SECOND... Depict the same image, but now with its programs (note this is the first time we will depict the programs they offer).
+
+```{r}
+
+```
+
+
+THIRD... Depict the entire state of S.C. distribution co-ops and their service territories.
+
+FOURTH... now add all their programs (note this is the second and final time we will depict the programs they offer).
+
+FIFTH... now depict how they all connect to the two G&Ts in the state.
+
+SIXTH... now depict how they all connect to ALL coop assets in the state (including CEEUS, and the statewide...).
+
+SEVEN... now depict how ALL of the co-ops in SC connect to the NATIONAL NETWORK.
