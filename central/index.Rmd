@@ -20,6 +20,17 @@ library(rgdal)
 library(sf)
 library(ggplot2)
 library(stringr)
+library(scales)
+#loading the package:
+library(igraph)
+library(ggmap)
+library(maps)
+library(ggthemes)
+library(mapdata)
+library(tidyverse)
+library(ggrepel)
+library(networkD3)
+
 ```
 
 ```{r echo=FALSE}
@@ -78,8 +89,7 @@ mapview(coops.sf, zcol = "Category", legend = FALSE) + territories
 ```
 ##Network Graphs
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-#loading the package:
-library(igraph)
+
 #Read the network data:
 net <- read.csv("sc_egdes.csv")
 #Read the node attribute data
@@ -189,15 +199,15 @@ In this graph, we see one individual distribution cooperative, Santee. It's inte
 
 ```{r echo=FALSE}
 #get name of Node
-V(g1)$fullname[10]
+V(g1)$fullname[14]
 #create one distro network
-sel.dist <- ego(g1, order = 1, nodes = V(g1)[10], mode = "all", mindist = 0)
+sel.dist <- ego(g1, order = 1, nodes = V(g1)[14], mode = "all", mindist = 0)
 
 g.dist <- induced_subgraph(g1, unlist(sel.dist))
 par(mfrow=c(1,1), mar=c(0,3,1,0))
 plot(g.dist, layout = layout_components, vertex.size = 14, edge.arrow.size = .4, 
      vertex.color = rainbow(12)[factor(V(g.dist)$cat2)],
-     main = "Blue Ridge Electric Cooperative Network")
+     main = "Marlboro Electric Cooperative Network")
 legend("bottomleft", legend = levels(factor(V(g.dist)$cat2)), col = rainbow(12),
        pch = 16, bty = "n", title = "Node Type", inset=c(-0.1,0))
 ```
@@ -208,10 +218,10 @@ Below, we see that the network can also be visualized spatially, that is, we can
 
 ```{r echo=FALSE}
 #basic plotting the network on a map
-library(maps)
+
 data(countyMapEnv)
 par(mfrow=c(1,1), mar=c(0,3,1,0))
-map('county', 'south carolina')
+maps::map('county', 'south carolina')
 
 sel.state <- V(g1)[state == "SC"]
 g.state <- induced_subgraph(g1, unlist(sel.state))
@@ -265,7 +275,7 @@ d3_map(shape = states, projection = "Albers") %>%
 
 
 ```{r}
-library(ggmap)
+
 plot_vector <- as.data.frame(cbind(V(g1)$long,V(g1)$lat))
 
 plot_vector$cat2 <- V(g1)$cat2
@@ -283,16 +293,10 @@ edges <- data.frame(plot_vector[edgelist[,1],], plot_vector[edgelist[,2],], as.c
 edgebtwn <- edge.betweenness(g1)
 
 str(edgebtwn)
-colnames(edges) <- c("X1","Y1","X2","Y2", "label")
+colnames(edges) <- c("X1","Y1","Label","X2", "Y2", "Rnd", "Rn2")
 
-edges$label <- as.character(edges$label)
 
-edges$label <- factor(edges$label)
-head(edges)
 
-levels(edges$label)
-
-typeof(edges$label.f)
 
 #this code gets a pretty map for using ggmap
 sc <- get_map(location = c(bottom = 32.0333099365234, 
@@ -310,38 +314,194 @@ plot_vector$V2 <- as.numeric(plot_vector$V2)
 ggmap(sc, darken = c(.5,"#FFFFFF")) + 
   geom_segment(aes(x=X1, y=Y1, xend = X2, yend = Y2), 
                color = "dark grey", 
-               data = edges, 
-               size = BBmisc::normalize(edgebtwn, method = "range", range = c(0.5,1)), 
-               alpha = BBmisc::normalize(edgebtwn, method = "range", range = c(0.25,1))) +
-  geom_point(aes(V1, V2, color = cat2), 
-             size = sqrt(alldeg), 
-             data = plot_vector, 
-             alpha = 0.5) 
-
+               data = edges
+               )
+sc_county <- map_data('county', 'south carolina')
 sc_map <- ggmap(sc, darken = c(.5,"#FFFFFF"))
+sc_counties <- ggplot() +
+  geom_polygon(aes(x = long, y = lat, group = group), data = sc_county, alpha = .2, color = muted("black"))
+
 ```
 
 FIRST.... Depict first tier distribution co-op within its service territory, itself depicted with the state of South Carolina. Id like to see one electric co-op service territory boldened. Let's focus on a co-op that has a lot of programs.
-```{r}
-sc_map +
-  geom_point(aes(lon, lat), data = coops[coops$ID == 10,]) +
-  geom_sf(data = territories[territories$name == "Blueridge Territorial",], inherit.aes = FALSE)
+```{r marlboro}
+sc_counties +
+  geom_sf(data = territories[territories$name == "Marlboro Territorial",],
+          inherit.aes = FALSE, fill = "blue", alpha = .4) +
+  coord_sf(datum=NA) +
+  geom_point(aes(lon, lat, fill = Label), 
+             data = coops[coops$ID == 14,], 
+             size = 3, color = "blue") +
+  labs(title = "Marlboro Electric Cooperative Territory") +
+  geom_label_repel(aes(lon, lat, label = Label),
+                  box.padding   = 1, 
+                  point.padding = 1,
+                  segment.color = 'black', 
+                  data = coops[coops$ID == 14,]) +
+  guides(fill = "none") +
+  theme_map()
+  
+
 
 coops[coops$ID == 10,]
 ```
 
 SECOND... Depict the same image, but now with its programs (note this is the first time we will depict the programs they offer).
 
-```{r}
+```{r with programs}
+marl_nodes <- as.data.frame(cbind(V(g.dist)$long,V(g.dist)$lat))
+
+marl_nodes$cat2 <- V(g.dist)$cat2
+marl_nodes$cat1 <- V(g.dist)$cat1
+marl_nodes$cat3 <- V(g.dist)$cat3
+marl_nodes$name <- V(g.dist)$fullname
+marl_nodes$state <- V(g.dist)$state
+
+head(marl_nodes)
+sc_counties +
+  geom_sf(data = territories[territories$name == "Marlboro Territorial",],
+          inherit.aes = FALSE, fill = "blue", alpha = .4) +
+  coord_sf(datum=NA) +
+  geom_point(aes(V1, V2, color = cat2), 
+             data = marl_nodes %>%
+               filter(state == "SC") %>%
+               filter(cat1 == "First Tier" | cat2 == "Program"| cat2 == "Other"), 
+             size = 3) +
+  geom_point(aes(V1, V2), 
+             data = marl_nodes %>%
+               filter(state == "SC") %>%
+               filter(cat1 == "First Tier" | cat2 == "Program"| cat2 == "Other"), 
+             size = 3, stroke = 1, shape = 21) +
+  labs(title = "Marlboro Electric Cooperative and Territory", 
+       subtitle = "with programs in their network", 
+       color = "Node Type") +
+  theme_map()
+
+
 
 ```
 
 
 THIRD... Depict the entire state of S.C. distribution co-ops and their service territories.
 
+```{r coops and territories}
+sc_counties + 
+  geom_sf(data = territories,
+          inherit.aes = FALSE, aes(fill = name), alpha = .6) +
+  coord_sf(datum=NA) +
+  geom_point(aes(lon, lat, fill = Label), 
+             data = coops %>%
+               filter(cat1 == "First Tier"), 
+             size = 3, color = "black", stroke = 1, shape = 21) +
+  guides(fill = "none", color = "none") +
+  labs(title = "South Carolina Cooperative Service Territories", subtitle = "with Central Distribution Offices") +
+  theme_map()
+  
+```
+
+
 FOURTH... now add all their programs (note this is the second and final time we will depict the programs they offer).
 
+```{r all programs}
+sc_counties + 
+ geom_sf(data = territories,
+          inherit.aes = FALSE, aes(fill = name), 
+          alpha = .6) +
+  coord_sf(datum=NA) +
+  geom_point(aes(lon, lat, color = cat2), 
+             data = coops %>%
+               filter(State == "SC") %>%
+               filter(cat1 == "First Tier" | cat2 == "Other" | cat2 == "Program"),
+             size = 3) +
+  geom_point(aes(lon, lat), 
+             data = coops %>%
+               filter(State == "SC") %>%
+               filter(cat1 == "First Tier" | cat2 == "Other" | cat2 == "Program"), 
+             size = 3, color = "black", stroke = 1, 
+             shape = 21) +
+  guides(fill = "none", color = "legend") +
+  labs(title = "South Carolina Cooperative Service Territories", subtitle = "with Central Distribution Offices & Programs", color = "Node Type") +
+  theme_map()
+```
+
 FIFTH... now depict how they all connect to the two G&Ts in the state.
+
+```{r g and ts with network}
+sel.gt <- V(g.state)[cat3 == "GandT" | cat3 == "Distribution"]
+g.gt <- induced_subgraph(g.state, unlist(sel.gt))
+g.gt <- g.gt %>%
+  add_edges(c(2,13, 2,18, 2,21))
+
+
+g.gt <- delete.edges(g.gt, E(g.gt)[23])
+edgelist <- get.edgelist(g.gt)
+
+
+edgelist[,1]<- as.numeric(match(edgelist[,1],V(g.gt)$name))
+edgelist[,2]<- as.numeric(match(edgelist[,2],V(g.gt)$name))
+
+plot_vector <- as.data.frame(cbind(V(g.gt)$long,V(g.gt)$lat))
+
+plot_vector$cat2 <- V(g.gt)$cat2
+
+edges.gt <- data.frame(plot_vector[edgelist[,1],], plot_vector[edgelist[,2],])
+
+head(edges.gt)
+colnames(edges.gt) <- c("X1","Y1","cat2","X2", "Y2", "cat2.1")
+
+head(edges.gt)
+
+sc_counties + 
+  geom_sf(data = territories,
+          inherit.aes = FALSE, aes(fill = name), 
+          alpha = .6) +
+  coord_sf(datum=NA) +
+  geom_segment(aes(x=X1, y=Y1, xend = X2, yend = Y2), 
+               color = "black", 
+               data = edges.gt) +
+  geom_point(aes(lon, lat, color = cat3), 
+             data = coops %>%
+               filter(State == "SC") %>%
+               filter(cat1 == "First Tier"), 
+             size = 3) +
+  geom_point(aes(lon, lat, color = cat3), 
+             data = coops %>%
+               filter(State == "SC") %>%
+               filter(cat3 == "GandT"), 
+             size = 3) +
+  geom_point(aes(lon, lat), 
+             data = coops %>%
+               filter(State == "SC") %>%
+               filter(cat1 == "First Tier" | cat3 == "GandT"), 
+             size = 3, color = "black", stroke = 1, 
+             shape = 21) +
+  labs(title = "South Carolina Cooperative Service Territories", subtitle = "with Distribution and G & T nodes", color = "Node Type") +
+  guides(fill = "none", color = "legend") +
+  theme_map()
+
+```
+
+```{r}
+
+
+par(mfrow=c(1,1), mar=c(0,3,1,0))
+plot(g.gt, 
+     layout = layout_components, 
+     vertex.size = 14, 
+     edge.arrow.size = .4,
+     vertex.color = rainbow(3)[factor(V(g.gt)$cat3)],
+     vertex.label = ifelse(V(g.state)$name == 2 | V(g.state)$name == 1,
+                           V(g.state)$fullname, NA),
+     vertex.label.cex = .7,
+     vertex.label.color = "blue",
+     main = "South Carolina Electric Cooperative Network",
+     sub = "G&T and Distribution")
+legend("bottomleft", legend = levels(factor(V(g.gt)$cat3)), col = rainbow(3),
+       pch = 16, bty = "n", title = "Node Type", inset=c(-0.1,0))
+
+```
+
+
 
 SIXTH... now depict how they all connect to ALL coop assets in the state (including CEEUS, and the statewide...).
 
