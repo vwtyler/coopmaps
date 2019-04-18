@@ -27,7 +27,7 @@ library(ggthemes)
 library(mapdata)
 library(tidyverse)
 library(ggrepel)
-library(networkD3)
+
 ```
 
 
@@ -40,14 +40,31 @@ nodes_in <- read.csv("in_nodes-geocoded.csv", stringsAsFactors = F)
 
 nodes_in <- rename(nodes_in, Label = label)
 
-
+nodes_ak <- read.csv("aecc-geocoded-nodes.csv", stringsAsFactors = F)
 
 edges_sc <- read.csv("sc_egdes.csv", stringsAsFactors = F)
 
+names(edges_sc)
+
 edges_sc <- edges_sc %>%
+  select(Source, Target)
+
+names(edges_sc)
+
+edges_ak <- read.csv("aecc-edges.csv")
+
+nodes_ak <- rename(nodes_ak, cat1 = Label, Label = Name)
+
+head(nodes_ak)
+
+names(edges_ak)
+
+edges_ak <- edges_ak %>%
   select(Source, Target)
 # note same df lol.
 edges_in <- read.csv("in_edges.csv", stringsAsFactors = F)
+
+names(edges_in)
 
 names(edges_in) <- c("Source", "Target")
 
@@ -63,19 +80,29 @@ lookup_table <- nodes_sc %>%
   select(sc_id, natl_id, in_id)
 lookup_table
 ```
+```{r}
+
+#look up table for ak
+lookup_table <- natl_nodes %>%
+  full_join(nodes_ak, by="Label") %>%
+  rename(nat_id=natl_id, ak_id=ID) %>%
+  mutate(natl_id=1:n()) %>%
+  select(nat_id, natl_id, ak_id)
+lookup_table
+```
 
 # renaming ids
 
 ```{r}
-new_edges_sc <- edges_sc %>%
-  left_join(lookup_table, by=c("Source"="sc_id")) %>%
-  select(-in_id, -Source) %>%
+new_edges_ak <- edges_ak %>%
+  left_join(lookup_table, by=c("Source"="ak_id")) %>%
+  select(-nat_id, -Source) %>%
   rename(Source=natl_id) %>%
-  left_join(lookup_table, by=c("Target"="sc_id")) %>%
-  select(-in_id, -Target) %>%
+  left_join(lookup_table, by=c("Target"="ak_id")) %>%
+  select(-nat_id, -Target) %>%
   rename(Target=natl_id)
 
-new_edges_sc
+new_edges_ak
 ```
 
 ```{r}
@@ -90,6 +117,12 @@ new_edges_indi <- edges_in %>%
 new_edges_indi
 
 natl_edges <- rbind(new_edges_indi, new_edges_sc)
+
+#bind new ak edges to natl
+dim(natl_edges)
+dim(edges_ak)
+natl_edges <- rbind(natl_edges, edges_ak)
+dim(natl_edges)
 ```
 
 Create nodes table
@@ -113,6 +146,26 @@ natl_nodes <- nodes_sc %>%
      
 natl_nodes$cat2 <- 
   str_replace(natl_nodes$cat2, "Associations", "Association")
+
+
+
+#add arkansas
+
+natl_nodes <- natl_nodes %>%
+  full_join(nodes_ak, by="Label") %>%
+  rename(nat_id = natl_id, ak_id=ID) %>%
+  mutate(natl_id = 1:n(),
+         address = coalesce(address.x, formatted_address),
+         cat1 = coalesce(cat1.x, cat1.y),
+         lat = coalesce(lat.x, lat.y),
+         lon = coalesce(lon, lng),
+         Notes = coalesce(Notes, X)) %>%
+  select(natl_id, Label, address, State, zipcode, cat1, cat2, 
+         cat3, url, Notes, lon, lat)
+     
+names(natl_nodes)
+
+tail(natl_nodes$Notes)
 
 write.csv(natl_nodes, file = "natl_nodes.csv")
 
@@ -188,15 +241,17 @@ plot(g1, layout = layout_components, vertex.label = NA, vertex.size = alldeg, ed
 ```
 
 ```{r}
-tiff("natl.tiff", units="in", width=6, height=5, res=300)
+#tiff("natl.tiff", units="in", width=6, height=5, res=300)
 par(mfrow=c(1,1),mar=c(0,3,1,0))
 plot(g1, layout = layout_components, vertex.size = 11, 
      edge.arrow.size = .4, 
-     vertex.color = rainbow(7)[factor(V(g1)$cat2)],
+     vertex.color = rainbow(7)[factor(V(g1)$cat1)],
      main = "Indiana & South Carolina Electric Cooperative Network")
-legend("bottomleft", legend = levels(factor(V(g1)$cat2)), 
+legend("bottomleft", legend = levels(factor(V(g1)$cat1)), 
        col = rainbow(7),
        pch = 16, bty = "n", title = "Node Type", inset=c(-0.1,0))
-dev.off()
+#dev.off()
+
+g1
 ```
 

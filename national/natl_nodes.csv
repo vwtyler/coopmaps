@@ -28,7 +28,7 @@
 "27",27,"Touchstone Energy","4301 Wilson Blvd, Arlington, VA 22203, USA","VA",22203,"Second Tier","CBN","Support","","Touchstone provides support to its members in various ways. Among other things, support has included training in strategy development and execution best practices. Several Touchstone members have subsequently been recognized by the Palladium Balanced Scorecard Hall of Fame for Executing Strategy™ for their success in developing winning strategies and executing on them; these members include Blue Ridge Electric Membership Corp, Powder River Energy Corporation, Ozarks Electric Cooperative, and Roanoke Electric Cooperative",-77.113,38.88053
 "28",28,"National Rural Utilities Cooperative Finance Corporation","20701 Cooperative Way, Sterling, VA 20166, USA","VA",20166,"Second Tier","CBN","Support","","Created and owned by America's electric coop network",-77.4268,39.04158
 "29",29,"Federated Rural Electric Insurance Exchange","7725 Renner Rd, Shawnee, KS 66217, USA","KS",66285,"No Tier","Other","Insurance","","",-94.7791,38.98763
-"30",30,"National Rural Electric Cooperative Association","4301 Wilson Blvd, Arlington, VA 22203, USA","VA",22203,"Fourth Tier","Associations","National","","",-77.1129,38.88053
+"30",30,"National Rural Electric Cooperative Association","4301 Wilson Blvd, Arlington, VA 22203, USA","VA",22203,"Fourth Tier","Association","National","","",-77.1129,38.88053
 "31",31,"Office of Regulatory Staff","1401 Main St #900, Columbia, SC 29201, USA","SC",29201,"No Tier","Other","State Regulation","https://regulatorystaff.sc.gov/","The Office of Regulatory Staff (ORS) represents the public interest of South Carolina in utility regulation for the major utility industries -- electric, natural gas, telecommunications, transportation, and water/wastewater -- before the Public Service Commission of South Carolina, the court system, the South Carolina General Assembly, and federal regulatory bodies. The ORS also has responsibility for oversight of railroad safety and natural gas pipeline safety in South Carolina.
 
 The public interest, as defined by the South Carolina General Assembly, is as follows:
@@ -63,7 +63,7 @@ Santee Cooper launched the Green Power Program in response to increased customer
 "46",46,"North Eastern Strategic Alliance","121 S Evander Dr, Florence, SC 29506, USA","SC",29502,"No Tier","Program","Economic Development","","NESA is a regional, non-profit, economic development organization that serves nine counties in the northeastern corner of South Carolina. Our primary objective is to create jobs for the residents of the region by working within the existing industry base and recruiting new companies. We assist these companies by providing research assistance, infrastructure support, workforce training opportunities, regional site selection assistance and we work with our county partners and the state to help coordinate incentive packages.",-79.6584,34.1954
 "47",47,"South Carolina Chamber of Commerce","1301 Gervais St #1100, Columbia, SC 29201, USA","SC",29201,"No Tier","Other","Business Advocacy","https://www.scchamber.net/","state",-81.0316,34.0022
 "48",48,"South Carolina Department of Commerce","1201 Main St # 1600, Columbia, SC 29201, USA","SC",29201,"No Tier","Other","State Support","","state",-81.0347,34.00137
-"49",49,"South Carolina Association of Heating & A/C Contractors","South Carolina, USA","SC",29416,"No Tier","Associations","State","","",-81.1637,33.83608
+"49",49,"South Carolina Association of Heating & A/C Contractors","South Carolina, USA","SC",29416,"No Tier","Association","State","","",-81.1637,33.83608
 "50",50,"Hilton Head Island Sea Turtle Protection Project","Hilton Head Island, SC, USA","SC",29925,"No Tier","Program","Environment","https://www.coastaldiscovery.org","",-80.7526,32.21632
 "51",51,"Discovery Channel School","1 Discovery Pl, Silver Spring, MD 20910, USA","MD",20910,"No Tier","Program","Education","https://www.palmetto.coop/get-charged/","Youth Education",-77.0276,38.99478
 "52",52,"Santee Cooper","1 Riverwood Dr, Moncks Corner, SC 29461, USA","SC",29461,"No Tier","Other","Hydro Partnership","","",-79.9806,33.19918
@@ -200,3 +200,42 @@ Santee Cooper launched the Green Power Program in response to increased customer
 "183",183,"Ohio Cooperative Living","Ohio, USA","OH",NA,"No Tier","Other","Press","https://ohioec.org/ohio-cooperative-living/","",-82.907123,40.4172871
 "184",184,"Ohio Electric Cooperatives","6677 Busch Blvd, Columbus, OH 43229, USA","OH",NA,"Fourth Tier","Association","State","https://ohioec.org/","",-82.9942982,40.1012987
 "185",185,"Buckeye Power","6677 Busch Blvd, Columbus, OH 43229, USA","OH",NA,"Second Tier","CBN","G&T","https://ohioec.org/buckeye-power/","",-82.9942982,40.1012987
+"186",186,"Arkansas Valley Electric Cooperative","1811 W Commercial St, Ozark, AR 72949, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-93.8442928,35.4887736
+"187",187,"Ashley-Chicot Cooperative","307 E Jefferson St, Hamburg, AR 71646, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-91.7952542,33.2271945
+"188",188,"C&L Electric Cooperative","900 Church St, Star City, AR 71667, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-91.8540872,33.9530869
+"189",189,"Carroll Electric Cooperative","707 SE Walton Blvd, Bentonville, AR 72712, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-94.202757,36.3368027
+"190",190,"Clay County Electric Cooperative","3111 US-67, Corning, AR 72422, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-90.6414258,36.4117983
+"191",191,"Craighead Electric Cooperative","7277 AR-69, Paragould, AR 72450, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-90.536454,35.986805
+"192",192,"Farmers Electric Cooperative","2000 I-30, Greenville, TX 75402, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-96.0609803,33.1348332
+"193",193,"First Electric Cooperative","1000 S J P Wright Loop Rd, Jacksonville, AR 72076, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-92.0871282,34.8576355
+"194",194,"Mississippi County Electric Cooperative","510 N Broadway St, Blytheville, AR 72315, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-89.906501,35.931548
+"195",195,"North Arkansas Electric Cooperative","824 AR-56, Ash Flat, AR 72513, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-91.611709,36.214456
+"196",196,"Ouachita Electric Cooperative","700 Bradley Ferry Rd, Camden, AR 71701, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-92.8131966,33.5738882
+"197",197,"Ozarks Electric Cooperative","3641 W Wedington Dr, Fayetteville, AR 72704, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-94.2124637,36.0779525
+"198",198,"Petit Jean Electric Cooperative","270 Quality Dr, Clinton, AR 72031, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-92.456005,35.57052
+"199",199,"Rich Mountain Electric Cooperative","515 Janssen Ave, Mena, AR 71953, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-94.237211,34.584
+"200",200,"South Central Arkansas Electric Cooperative","4818 Hwy 8 West, Arkadelphia, AR 71923, United States",NA,NA,"Distribution Co-op",NA,NA,NA,"",-93.133502,34.126743
+"201",201,"Southwest Arkansas Electric Cooperative","2904 E 9th St, Texarkana, AR 71854, USA",NA,NA,"Distribution Co-op",NA,NA,NA,"",-94.0118307,33.4299286
+"202",202,"Woodruff Electric Cooperative","3201 Highway 1 North, Forrest City, AR 72335, United States",NA,NA,"Distribution Co-op",NA,NA,NA,"",-90.818158,35.039087
+"203",203,"Cooperative Finance Corporation","20701 Cooperative Way, Sterling, VA 20166, USA",NA,NA,"Co-op Finance",NA,NA,NA,"",-77.4267655,39.0415808
+"204",204,"National Rural Telecommunications Cooperative","2121 Cooperative Way, Herndon, VA 20171, USA",NA,NA,"Technology",NA,NA,NA,"",-77.4007126,38.9541839
+"205",205,"National Renewables Cooperative Association","4140 W 99th St, Carmel, IN 46032, USA",NA,NA,"National Co-op Association",NA,NA,NA,"",-86.2360032,39.9310015
+"206",206,"Electric Cooperatives Federal Credit Union","1 81st St, Little Rock, AR 72219, USA",NA,NA,"Co-op Finance",NA,NA,NA,"",-92.3224602,34.6775461
+"207",207,"Arkansas Advanced Energy Association","219 S Victory St, Little Rock, AR 72201, USA",NA,NA,"Statewide Association",NA,NA,NA,"",-92.285814,34.7483865
+"208",208,"Smart Electric Power Alliance","1220 19th St NW #800, Washington, DC 20036, USA",NA,NA,"National Association",NA,NA,NA,"",-77.043873,38.906625
+"209",209,"Association of Edison Illuminating Companies","11517 Fruitland Ct, Cleveland, OH 44102, USA",NA,NA,"National Association",NA,NA,NA,"",-81.7666898,41.4849435
+"210",210,"Electric Power Research Institute","3420 Hillview Ave, Palo Alto, CA 94304, USA",NA,NA,"Research",NA,NA,NA,"",-122.1466623,37.3964567
+"211",211,"Arkansas State Chamber of Commerce","1200 W Capitol Ave, Little Rock, AR 72201, USA",NA,NA,"Business",NA,NA,NA,"",-92.284345,34.7465589
+"212",212,"Little Rock Chamber of Commerce","200 E Markham St, Little Rock, AR 72201, USA",NA,NA,"Business",NA,NA,NA,"",-92.2687491,34.748131
+"213",213,"Electric Research and Manufacturing Cooperative","1625 Sylvan Rd, Dyersburg, TN 38024, USA",NA,NA,"Manufacturing",NA,NA,NA,"",-89.343611,36.052886
+"214",214,"Arkansas Electric Cooperative Corporation","1 81st St, Little Rock, AR 72209, USA",NA,NA,"Statewide Association",NA,NA,NA,"",-92.3224342,34.6777698
+"215",215,"Arkansas Electric Cooperative Incorporated","1 81st St, Little Rock, AR 72209, USA",NA,NA,"Sales",NA,NA,NA,"",-92.3224342,34.6777698
+"216",216,"GridBridge","130 Penmarc Dr, Raleigh, NC 27603, USA",NA,NA,"Manufacturing",NA,NA,NA,"",-78.6455055,35.7574711
+"217",217,"Today's Power","8110 Scott Hamilton Dr, Little Rock, AR 72209, USA",NA,NA,"Solar",NA,NA,NA,"",-92.319525,34.6751651
+"218",218,"Roundup for Change","P.O. Box 47, Ozark, AR 72949",NA,NA,"Community Development",NA,NA,NA,"** has same value as in SC",NA,NA
+"219",219,"Arkansas Living","P.O. Box 510, Little Rock, AR 72203",NA,NA,"State Magazine",NA,NA,NA,"",NA,NA
+"220",220,"Arkansas FIRST","",NA,NA,"Robotics Funding for STEM Education",NA,NA,NA,"",NA,NA
+"221",221,"High Voltage Lineman Technology Program","7648 Victory Blvd, Newport, AR 72112",NA,NA,"Development",NA,NA,NA,"partnership with ASUN",NA,NA
+"222",222,"SeaPerch Underwater Robotics Program","",NA,NA,"Development",NA,NA,NA,"",NA,NA
+"223",223,"Arkansas Economic Development Commission","900 West Capitol Avenue, Suite 400, Little Rock, AR 72201",NA,NA,"Development",NA,NA,NA,"",NA,NA
+"224",224,"Co-op Connections","4301 Wilson Blvd, Arlington, VA 22203",NA,NA,"Development",NA,NA,NA,"",NA,NA
