@@ -1,0 +1,24 @@
+---
+title: "National NRECA Network"
+author: "Tyler Jackson"
+date: "5/27/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Bring in the (Geocoded) National Data and the Edges
+```{r}
+nat_nodes <- 
+```
+
+Turn it into a graph
+
+Bring in node attributes
+
+Calculate some graph statistics
+
+Make some graphs
