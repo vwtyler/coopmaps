@@ -10,4 +10,4 @@ schema.ini
 *.sbx
 *.sbn
 *.cpg
-*.DS_Store
+.DS_Store
