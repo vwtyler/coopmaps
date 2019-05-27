@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Bring in the (Geocoded) National Data and the Edges
 ```{r}
-nat_nodes <- read.csv()
+nat_nodes <- read.csv("./data/myfile.csv")
 ```
 
 Turn it into a graph
