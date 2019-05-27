@@ -1,0 +1,249 @@
+,natl_id,Label,address,State,zipcode,cat1,cat2,cat3,url,Notes,lon,lat
+1,1,Central Electric Power Cooperative,"20 Cooperative Way, Columbia, SC 29210, USA",SC,29210,Second Tier,CBN,G&T,,,-81.1153,34.04252
+2,2,New Horizon Electric Cooperative,"1776 SC-14, Laurens, SC 29360, USA",SC,29360,Second Tier,CBN,G&ffT,,"Five of Central's Members are also Members of New Horizon Electric Cooperative (NHEC). NHEC maintains a portion of Central's transmission lines. Central paid NHEC $1,590,760 and $2,138,796 in 2017 and 2016, respectively. In 2017, NHEC paid Central $48,000 for management services.",-82.051,34.53096
+3,3,Alliance for Cooperatives Energy,"1331 Sunday Dr, Raleigh, NC 27607, USA",NC,27607,Second Tier,CBN,Marketing,,"In 2017 Central became a member of the Alliance for Cooperatives Energy Services Power Marketing, LLC (ACES). ACES is a nationwide energy management company. At the end of five years, Central can exit the organization and receive a refund equal to its pro rata share of ACES equity. Central is committed to purchase a minimum level of services from ACES starting at $195,000 annually and increasing 2% annually for a period of five years. Any services above these minimums will be paid at ACES actual cost. Central paid ACES $245,715 in 2017.",-78.7296,35.79718
+4,4,Cooperative Electric Energy Utility Supply,"101 Enterprise Pkwy, West Columbia, SC 29170, USA",SC,29171,Second Tier,CBN,Construction,,"Central is a member of the Cooperative Electric Energy Utility Supply, Inc. (CEE-US).CEE-US is organized to provide member cooperatives with the ability to purchase utility construction and repair materials and supplies on a combined basis. Central purchased $3,612,141 and $2,505,960 in CEE-US' fiscal years ending September 30, 2017 and 2016, respectively. Central's patronage capital in CEE-US represents approximately 2.5% of total CEE-US patronage capital.",-81.1452,33.95791
+5,5,KW Savings Co.,"808 Knox Abbott Dr, West Columbia, SC 29033, USA",SC,29033,Second Tier,CBN,Finance,,"Central and its Members created KW Savings Co. (KWS) to facilitate on-billing financing of energy efficiency home improvements for Members. Central received a $740,000 Rural Economic Development Loan & Grant (REDLG) loan from the United States Department of Agriculture (USDA), which was loaned to KWS for low interest loans on energy efficiency projects for distribution member households. KWS returns this money to Central at approximately the same time the loans are repaid by the distribution members. As of December 31, 2017 and 2016, $339,167 and $431,667 was outstanding, respectively. In 2017 and 2016, Central provided KWS with $29,877 and $3,823, respectively, to cover program administrative costs. In 2017, KWS paid Central $5,000 for accounting services.",-81.0624,33.98258
+6,6,"The Electric Cooperatives of South Carolina, Inc.","808 Knox Abbott Dr, Cayce, SC 29033, USA",SC,29033,Second Tier,CBN,Statewide,,,-81.0624,33.98258
+7,7,Aiken Electric Cooperative,"2790 Wagener Rd, Aiken, SC 29801, USA",SC,29802,First Tier,Distribution,Distribution,,,-81.6548,33.54875
+8,8,Berkeley Electric Cooperative,"551 Rembert C Dennis Blvd, Moncks Corner, SC 29461, USA",SC,29461,First Tier,Distribution,Distribution,,,-79.9836,33.20253
+9,9,Black River Electric Cooperative,"1121 N Pike W, Sumter, SC 29153, USA",SC,29151,First Tier,Distribution,Distribution,,,-80.3743,33.95774
+10,10,Blue Ridge Electric Cooperative,"734 W Main St, Pickens, SC 29671, USA",SC,29671,First Tier,Distribution,Distribution,,,-82.7191,34.88153
+11,11,Broad River Electric Cooperative,"811 Hamrick Street, Gaffney, SC 29340, USA",SC,29342,First Tier,Distribution,Distribution,,,-81.6869,35.05099
+12,12,Edisto Electric Cooperative,"896 Calhoun St, Bamberg, SC 29003, USA",SC,29003,First Tier,Distribution,Distribution,,,-81.0428,33.28553
+13,13,Laurens Electric Cooperative,"2254 SC-14, Laurens, SC 29360, USA",SC,29360,First Tier,Distribution,Distribution,,,-82.0562,34.53563
+14,14,Marlboro Electric Cooperative,"676 SC-9, Bennettsville, SC 29512, USA",SC,29512,First Tier,Distribution,Distribution,,,-79.6417,34.59634
+15,15,Palmetto Electric Cooperative,"4360, 4063 Grays Hwy, Ridgeland, SC 29936, USA",SC,29936,First Tier,Distribution,Distribution,,,-81.0102,32.52692
+16,16,Tri-County Electric Cooperative,"6473 Old State Rd, St Matthews, SC 29135, USA",SC,29135,First Tier,Distribution,Distribution,,,-80.7747,33.6308
+17,17,Fairfield Electric Cooperative,"701 Blythewood Rd, Blythewood, SC 29016, USA",SC,29016,First Tier,Distribution,Distribution,,,-81.002,34.20942
+18,18,Little River Electric Cooperative,"300 Cambridge St, Abbeville, SC 29620, USA",SC,29620,First Tier,Distribution,Distribution,,,-82.3734,34.18313
+19,19,Mid-Carolina Electric Cooperative,"254 Longs Pond Rd, Lexington, SC 29072, USA",SC,29071,First Tier,Distribution,Distribution,,,-81.2924,33.93005
+20,20,Pee Dee Electric Cooperative,"1355 E McIver Rd, Darlington, SC 29540, USA",SC,29540,First Tier,Distribution,Distribution,,,-79.7891,34.25703
+21,21,York Electric Cooperative,"1385 Alexander Love Hwy, York, SC 29745, USA",SC,29745,First Tier,Distribution,Distribution,,,-81.2058,34.98885
+22,22,Coastal Electric Cooperative,"2269 Jefferies Hwy, Walterboro, SC 29488, USA",SC,29488,First Tier,Distribution,Distribution,,,-80.6608,32.93324
+23,23,Horry Electric Cooperative,"2774 Cultra Rd, Conway, SC 29526, USA",SC,29528,First Tier,Distribution,Distribution,,,-79.0796,33.87254
+24,24,Lynches River Electric Cooperative,"707 S Arant St, Pageland, SC 29728, USA",SC,29728,First Tier,Distribution,Distribution,,,-80.402,34.76022
+25,25,Newberry Electric Cooperative,"882 Wilson Rd, Newberry, SC 29108, USA",SC,29108,First Tier,Distribution,Distribution,,,-81.5926,34.27812
+26,26,Santee Electric Cooperative,"424 Sumter Hwy, Kingstree, SC 29556, USA",SC,29556,First Tier,Distribution,Distribution,,,-79.8528,33.68851
+27,27,Touchstone Energy,"4301 Wilson Blvd, Arlington, VA 22203, USA",VA,22203,Second Tier,CBN,Support,,"Touchstone provides support to its members in various ways. Among other things, support has included training in strategy development and execution best practices. Several Touchstone members have subsequently been recognized by the Palladium Balanced Scorecard Hall of Fame for Executing Strategy™ for their success in developing winning strategies and executing on them; these members include Blue Ridge Electric Membership Corp, Powder River Energy Corporation, Ozarks Electric Cooperative, and Roanoke Electric Cooperative",-77.113,38.88053
+28,28,National Rural Utilities Cooperative Finance Corporation,"20701 Cooperative Way, Sterling, VA 20166, USA",VA,20166,Second Tier,CBN,Support,,Created and owned by America's electric coop network,-77.4268,39.04158
+29,29,Federated Rural Electric Insurance Exchange,"7725 Renner Rd, Shawnee, KS 66217, USA",KS,66285,No Tier,Other,Insurance,,,-94.7791,38.98763
+30,30,National Rural Electric Cooperative Association,"4301 Wilson Blvd, Arlington, VA 22203, USA",VA,22203,Fourth Tier,Association,National,,,-77.1129,38.88053
+31,31,Office of Regulatory Staff,"1401 Main St #900, Columbia, SC 29201, USA",SC,29201,No Tier,Other,State Regulation,https://regulatorystaff.sc.gov/,"The Office of Regulatory Staff (ORS) represents the public interest of South Carolina in utility regulation for the major utility industries -- electric, natural gas, telecommunications, transportation, and water/wastewater -- before the Public Service Commission of South Carolina, the court system, the South Carolina General Assembly, and federal regulatory bodies. The ORS also has responsibility for oversight of railroad safety and natural gas pipeline safety in South Carolina.
+
+The public interest, as defined by the South Carolina General Assembly, is as follows:
+
+The concerns of the using and consuming public with respect to public utility services, regardless of the class of customer, and preservation of continued investment in and maintenance of utility facilities so as to provide reliable and high-quality utility services.",-81.0352,34.00401
+32,32,Rural Utilities Service (RUS),"1400 Independence Ave SW, Washington, DC 20250, USA",DC,20250,No Tier,Other,Federal Support,,,-77.032,38.88752
+33,33,South Carolina Power Team,"1201 Main St #250, Columbia, SC 29201, USA",SC,29201,No Tier,Program,Economic Development,,,-81.0348,34.00121
+34,34,South Carolina Public Service Commission,"101 Executive Center Dr # 100, Columbia, SC 29210, USA",SC,29210,No Tier,Other,State Regulation,https://psc.sc.gov/,"To Serve The Public Of South Carolina By Providing Open And Effective Regulation And Adjudication Of The State’s Public Utilities, Through Consistent Administration Of The Law And Regulatory Process",-81.1215,34.03315
+35,35,enLIGHTenSC,"808 Knox Abbott Dr, Cayce, SC 29033, USA",SC,29033,No Tier,Program,Education,https://www.enlightensc.org/about/,"EnlightenSC is an energy education program developed by educators for the consumer-owned electric cooperatives in South Carolina. The co-ops created EnlightenSC as a way to help teachers better access energy-related information and activities for their classrooms, resources designed to get young people excited about science, technology, engineering and mathematics: the STEM subjects. This website is a clearinghouse of lessons and activities, compiled from resources across the country, and correlated to S.C. science education standards for each grade level. The program has expanded to include a summer graduate courses for educators at no charge. EnlightenSC also sponsors the SC 4H Engineering Challenge – a competition for S.C. students.",-81.0624,33.98258
+36,36,Washington Youth Tour and Cooperative Youth Summit,"Richmond Hwy, Virginia 22202, USA",VA,22202,No Tier,Program,Education,https://www.electric.coop/our-organization/youth-programs/about-the-youth-tour/,"Youth Development The Electric Cooperative Youth Tour has brought high school students to Washington, D.C. for a week in June every year since the late 1950s. Students apply and are selected for this program by their local electric cooperative. We believe that students should see their nation’s capital up close, learn about the political process and interact with their elected official",-77.1352,38.71582
+37,37,South Carolina Living,"808 Knox Abbott Dr, Cayce, SC 29033, USA",SC,29210,No Tier,Program,Arts and Entertainment,http://scliving.coop/,,-81.0624,33.98258
+38,38,Touchstone Energy's Co-op Connections,"4301 Wilson Blvd, Arlington, VA 22203, USA",VA,22203,No Tier,Program,Discount Club,https://www.connections.coop/aboutus.aspx,"Free membership program that provides discounts on food, health services. Touchstone Energy® Cooperatives’ Co-op Connections® Program helps you save more and live 
+healthier every day! Our highly successful prescription discount offer is now joined by discounts on dental, vision,
+hearing, lab work & imaging and chiropractor visits. Best of all, you get all these great benefits for FREE!",-77.113,38.88053
+39,39,South Carolina 811,"7316, 810 Dutch Square Blvd, Columbia, SC 29210, USA",SC,29210,No Tier,Program,Safety,https://sc811.com/,Before you dig center for the state for underground utility lines.,-81.0945,34.03412
+40,40,CoBank,"1908, 6340 S Fiddlers Green Cir, Greenwood Village, CO 80111, USA",CO,80111,Second Tier,CBN,Finance,http://www.cobank.com/,,-104.891,39.60341
+41,41,No Barriers,"224 Canyon Ave Suite #207, Fort Collins, CO 80521, USA",CO,80521,No Tier,Program,Education,https://www.cobank.com/citizenship/no-barriers,"Disabled Veteran Eduation Program The CoBank/No Barriers program for rural veterans provides an opportunity for veterans with disabilities to challenge their own limitations, both real and perceived, physical and mental. Through successfully completing demanding activities like rafting, rock climbing and hiking, participants become better-equipped to overcome the obstacles they face in their daily lives. By sharing the experience with other veterans with disabilities, they also build a network of support that can last a lifetime.",-105.081,40.58529
+42,42,Help My House,"I-20, Columbia, SC 29210, USA",SC,29210,No Tier,Program,Community,https://www.epa.gov/sites/production/files/2017-06/documents/help_my_house_profile_6-1-16_508.pdf,"Low cost loans for energy efficiency improvements up to 35% reduction in bills : A model
+program for on-bill financing of
+“whole-building” energy efficiency
+upgrades, first piloted by eight
+electric co-ops in predominantly
+low-income rural areas of South
+Carolina.",-81.1109,34.03681
+43,43,Energy Smart SC,"808 Knox Abbott Dr, Cayce, SC 29033, USA",SC,29033,No Tier,Program,Education,https://energysmartsc.org/,Beat the Peak,-81.0624,33.98258
+44,44,SC Green Power,"1 Riverwood Dr, Moncks Corner, SC 29461, USA",SC,29461,No Tier,Program,Solar Partnership,http://www.scgreenpower.com/About-Us/index.aspx,"Green Power is electricity generated by renewable resources like decomposing garbage in selected landfills, solar and wind. These resources are replenished naturally and  minimize harm to the environment.
+
+ 
+
+Santee Cooper launched the Green Power Program in response to increased customer interest in renewable energy and concern for the environment. By taking this initial step to meet and encourage the growing demand for renewable energy, we can help reduce the reliance on limited resources while improving and preserving the environment for future generations.",-79.9777,33.19981
+45,45,U.S. Department of Energy,"1000 Independence Ave SW, Washington, DC 20585, USA",DC,20585,No Tier,Other,Federal Support,,,-77.026,38.88697
+46,46,North Eastern Strategic Alliance,"121 S Evander Dr, Florence, SC 29506, USA",SC,29502,No Tier,Program,Economic Development,,"NESA is a regional, non-profit, economic development organization that serves nine counties in the northeastern corner of South Carolina. Our primary objective is to create jobs for the residents of the region by working within the existing industry base and recruiting new companies. We assist these companies by providing research assistance, infrastructure support, workforce training opportunities, regional site selection assistance and we work with our county partners and the state to help coordinate incentive packages.",-79.6584,34.1954
+47,47,South Carolina Chamber of Commerce,"1301 Gervais St #1100, Columbia, SC 29201, USA",SC,29201,No Tier,Other,Business Advocacy,https://www.scchamber.net/,state,-81.0316,34.0022
+48,48,South Carolina Department of Commerce,"1201 Main St # 1600, Columbia, SC 29201, USA",SC,29201,No Tier,Other,State Support,,state,-81.0347,34.00137
+49,49,South Carolina Association of Heating & A/C Contractors,"PO Box 80265, Charleston, South Carolina, 29416 USA",SC,29416,No Tier,Association,State,https://scheatingandair.org/,,-81.1637,33.83608
+50,50,Hilton Head Island Sea Turtle Protection Project,"Hilton Head Island, SC, 29925 USA",SC,29925,No Tier,Program,Environment,https://www.coastaldiscovery.org,,-80.7526,32.21632
+51,51,Discovery Channel School,"1 Discovery Pl, Silver Spring, MD 20910, USA",MD,20910,No Tier,Program,Education,https://www.palmetto.coop/get-charged/,Youth Education,-77.0276,38.99478
+52,52,Santee Cooper,"1 Riverwood Dr, Moncks Corner, SC 29461, USA",SC,29461,No Tier,Other,Hydro Partnership,,,-79.9806,33.19918
+53,53,Congaree National Park,"100 National Park Rd, Hopkins, SC 29061, USA",SC,29061,No Tier,Other,Green Power Partner,,Green Power Partner,-80.8234,33.8296
+54,54,Starbucks Coffee,"2401 Utah Ave S 8th floor, Seattle, WA 98134, USA",WA,98134,No Tier,Other,Green Power Partner,,Green Power Partner,-122.335,47.58075
+55,55,Operation Round-Up,"808 Knox Abbott Dr, West Columbia, SC 29033, USA",SC,29210,No Tier,Program,Community,https://www.palmetto.coop/operation-round-up/,"One of the most successful community service efforts in which we’re involved has been the Operation Round Up program. Founded by Palmetto Electric in 1989, Operation Round Up has been an incredibly successful way in which we have been able to help the less fortunate in our community. Through Operation Round Up, Palmetto Electric automatically rounds up a participating member’s electric bills to the next highest dollar. For example, a consumer’s monthly bill of $52.73 would be automatically rounded up to $53.00, with the additional 27 cents going to the Operation Round Up fund. On an annual basis, we are able to donate roughly six dollars for each participating customer – and that pool of money is then allocated to a variety of worthy causes throughout our service area.",-81.0624,33.98258
+56,56,Palmetto Economic Development Coorporation,"1201 Main St #250, Columbia, SC 29201, USA",SC,29201,No Tier,Other,Economic Development,,,-81.0348,34.00121
+57,57,WIRE (Women Involved in Rural Electrification),"808 Knox Abbott Dr, West Columbia, SC 29033, USA",SC,29210,No Tier,Program,Community,http://www.ecsc.org/wire,,-81.0624,33.98258
+58,58,Alliance Park Anderson County,"411 Alliance Pkwy, Anderson, SC 29621, USA",SC,29621,No Tier,Other,Economic Development,,Industrial park power site,-82.5997,34.62888
+59,59,Golden Corner,"SC-59 & Cleveland Creek Rd, Fair Play, SC 29643, USA",SC,29643,No Tier,Other,Economic Development,,Industrial park power site,-82.9883,34.51818
+60,60,TTI,"100 Ryobi Drive, Anderson, SC 29621, USA",SC,29621,No Tier,Other,Economic Development,,Industrial park power site,-82.6118,34.63247
+61,61,Alliance Park Pickens,"1390 Smith Grove Rd, Liberty, SC 29657, USA",SC,29657,No Tier,Other,Economic Development,,Industrial park power site,-82.6549,34.79256
+62,62,OITP,"4271 SC-11, Westminster, SC 29693, USA",SC,29693,No Tier,Other,Economic Development,,Industrial park power site,-83.0479,34.69726
+63,63,South Carolina I-77 Alliiance,"3200 Commerce Dr, Richburg, SC 29729, USA",SC,29729,No Tier,Other,Economic Development,https://www.i77alliance.com/,,-81.0344,34.74994
+64,64,York County Economic Development,"1830 2nd Baxter Crossing, Fort Mill, SC 29708, USA",SC,29708,No Tier,Other,Economic Development,,,-80.969,35.02947
+65,65,Colleton Solar Farm,"1751 Hiers Corner Rd, Walterboro, SC 29488, USA",SC,29488,No Tier,Other,Solar Partnership,,Solar Farm,-80.6944,32.91116
+66,66,MySCSolar,"808 Knox Abbott Dr, Cayce, SC 29033, USA",SC,29033,No Tier,Program,Solar Partnership,,,-81.0624,33.98258
+67,67,Carolina Connect,"P.O. Box 1667, SC 29071, USA",SC,29071,No Tier,Program,Broadband,,,-80.767078,33.221238
+68,68,Chesterfield County Economic Development Board,"105 Green St, Chesterfield, SC 29709, USA",SC,29709,No Tier,Other,Economic Development,,,-80.0853,34.73645
+69,69,Clarendon County Development Board,"411 Sunset Dr, Manning, SC 29102, USA",SC,29102,No Tier,Other,Economic Development,,,-80.2223,33.68778
+70,70,Kershaw County Economic Development Office,"95 Innovation Way, Camden, SC 29020, USA",SC,29021,No Tier,Other,Economic Development,,,-80.5869,34.2194
+71,71,Florence County Economic Development Partnership,"SiMT Incubator Building, 1951 Pisgah Rd #120, Florence, SC 29501, USA",SC,29501,No Tier,Other,Economic Development,,,-79.8043,34.24854
+72,72,Georgetown County Economic Development,"716 Prince St, Georgetown, SC 29440, USA",SC,29440,No Tier,Other,Economic Development,,,-79.2816,33.36737
+73,73,Williamsburg County Economic Development Board,"130 W Main St, Kingstree, SC 29556, USA",SC,29556,No Tier,Other,Economic Development,,,-79.8313,33.66392
+74,74,Indiana Electric Cooperatives,"8888 Keystone Crossing #1600, Indianapolis, IN 46240, USA",IN,46240,Fourth Tier,Association,State,https://www.indianaec.org/,,-86.1088562,39.9166991
+75,75,Steuben County REMC,"1212 S Wayne St, Angola, IN 46703, USA",IN,46703,First Tier,Distribution,Distribution,https://www.remcsteuben.com/,,-85.000768,41.622176
+76,76,Lagrange County REMC,"1995 Hwy 20, LaGrange, IN 46761, USA",IN,46761,First Tier,Distribution,Distribution,https://www.lagrangeremc.com/,,-85.3884345,41.6426089
+77,77,Noble REMC,"300 Weber Rd, Albion, IN 46701, USA",IN,46701,First Tier,Distribution,Distribution,https://www.nobleremc.com/,,-85.420704,41.389335
+78,78,"Paulding Putnam Electric Cooperative, Inc.","401 McDonald Pike, Paulding, OH 45879, USA",OH,45879,First Tier,Distribution,Distribution,https://ppec.coop/,,-84.592718,41.132618
+79,79,Northeastern REMC,"4901 E Park 30, Columbia City, IN 46725, USA",IN,46725,First Tier,Distribution,Distribution,http://www.nremc.com/,,-85.398418,41.135073
+80,80,Jay County REMC,"484 S 200 W, Portland, IN 47371, USA",IN,47371,First Tier,Distribution,Distribution,https://www.jayremc.com/,,-85.0197191,40.4317726
+81,81,Heartland REMC,"4563 E Markle Rd, Markle, IN 46770, USA",IN,46770,First Tier,Distribution,Distribution,https://www.heartlandremc.com/,,-85.363576,40.82802
+82,82,Kosciusko REMC,"370 S 250 E, Warsaw, IN 46582, USA",IN,46582,First Tier,Distribution,Distribution,http://kremc.com/,,-85.7922188,41.2291109
+83,83,Marshall County REMC,"11299 12th Rd, Plymouth, IN 46563, USA",IN,46563,First Tier,Distribution,Distribution,http://www.marshallremc.com/,,-86.2762218,41.3029562
+84,84,Fulton County REMC,"1448 W State Rd 14, Rochester, IN 46975, USA",IN,46975,First Tier,Distribution,Distribution,http://www.fultoncountyremc.coop/,,-86.26994,41.054855
+85,85,Miami-Cass REMC,"3086 W 100 N, Peru, IN 46970, USA",IN,46970,First Tier,Distribution,Distribution,http://www.mcremc.coop/,,-86.1302268,40.7793046
+86,86,Carroll White REMC,"302 N 6th St, Monticello, IN 47960, USA",IN,47960,First Tier,Distribution,Distribution,https://www.cwremc.com/,,-86.775261,40.747382
+87,87,Kankakee Valley REMC,"8642 US-30, Wanatah, IN 46390, USA",IN,46390,First Tier,Distribution,Distribution,https://www.kvremc.com/,,-86.8647589,41.4338524
+88,88,Jasper County REMC,"280 E Wood Rd, Rensselaer, IN 47978, USA",IN,47978,First Tier,Distribution,Distribution,http://www.jasperremc.com/,,-87.1553774,40.9563623
+89,89,Newton County REMC,"4151 US-24, Goodland, IN 47948, USA",IN,47948,First Tier,Distribution,Distribution,http://www.newtoncountyremc.com/,,-87.312553,40.765185
+90,90,Warren County REMC,"15 Midway St, Williamsport, IN 47993, USA",IN,47993,First Tier,Distribution,Distribution,https://www.wcremc.com/,,-87.2952271,40.2868523
+91,91,Tipmont REMC,"403 S Main St, Linden, IN 47955, USA",IN,47955,First Tier,Distribution,Distribution,https://www.tipmont.org/,,-86.9032143,40.1842633
+92,92,Boone REMC,"1207 Indianapolis Ave, Lebanon, IN 46052, USA",IN,46052,First Tier,Distribution,Distribution,https://www.bremc.com/,,-86.4545039,40.0371334
+93,93,Hendricks Power Cooperative,"86 North CR-500 East, Avon, IN 46123, USA",IN,46123,First Tier,Distribution,Distribution,https://www.hendrickspower.com/,,-86.43949,39.76362
+94,94,Johnson County REMC,"750 International Dr, Franklin, IN 46131, USA",IN,46131,First Tier,Distribution,Distribution,http://jcremc.com/,,-86.0691575,39.5179685
+95,95,South Central Indiana REMC,"300 Morton Ave, Martinsville, IN 46151, USA",IN,46151,First Tier,Distribution,Distribution,https://www.sciremc.com/,,-86.4323865,39.4172926
+96,96,NineStar Connect,"2243 E Main St, Greenfield, IN 46140, USA",IN,46140,First Tier,Distribution,Distribution,https://www.ninestarconnect.com/,,-85.7319697,39.7858383
+97,97,Parke County REMC,"119 W High St, Rockville, IN 47872, USA",IN,47872,First Tier,Distribution,Distribution,https://pcremc.com/content/parke-county-remc-news,,-87.2286139,39.7612049
+98,98,Utilities District of Western Indiana REMC,"1666 W State Rd 54, Bloomfield, IN 47424, USA",IN,47424,First Tier,Distribution,Distribution,https://www.udwiremc.com/,,-86.9721069,39.0289835
+99,99,WIN Energy REMC,"3981 US-41, Vincennes, IN 47591, USA",IN,47591,First Tier,Distribution,Distribution,http://www.winenergyremc.com/,,-87.5370455,38.6181949
+100,100,Daviess-Martin County REMC,"12628 E 75 N, Loogootee, IN 47553, USA",IN,47553,First Tier,Distribution,Distribution,http://www.dmremc.com/,,-86.928774,38.669204
+101,101,"Dubois REC, Inc.","1400 Energy Drive, Jasper, IN 47546, USA",IN,47546,First Tier,Distribution,Distribution,http://www.duboisrec.com/,,-86.9057047,38.3632021
+102,102,Southern Indiana Power,"1776 10th St, Tell City, IN 47586, USA",IN,47586,First Tier,Distribution,Distribution,http://www.sinpwr.com/,,-86.7661473,37.9665956
+103,103,Orange County REMC,"7133 IN-337, Orleans, IN 47452, USA",IN,47452,First Tier,Distribution,Distribution,http://myremc.coop/,,-86.43789,38.659949
+104,104,Jackson County REMC,"274 E Base Rd, Brownstown, IN 47220, USA",IN,47220,First Tier,Distribution,Distribution,https://www.jacksonremc.com/,,-86.0326094,38.8815365
+105,105,Harrison REMC,"1165 Old Forest Rd NW, Corydon, IN 47112, USA",IN,47112,First Tier,Distribution,Distribution,http://www.harrisonremc.com/,,-86.1480832,38.2184912
+106,106,Clark County REMC,"1859, 7810 IN-60, Sellersburg, IN 47172, USA",IN,47172,First Tier,Distribution,Distribution,https://www.theremc.com/,,-85.7652339,38.3751418
+107,107,Southeastern Indiana REMC,"712 S Buckeye St, Osgood, IN 47037, USA",IN,47037,First Tier,Distribution,Distribution,https://www.seiremc.com/,,-85.2885117,39.123268
+108,108,Bartholomew County REMC,"1697 W Deaver Rd, Columbus, IN 47201, USA",IN,47201,First Tier,Distribution,Distribution,https://www.bcremc.com/,,-85.942153,39.1481478
+109,109,Decatur County REMC,"1430 W Main St, Greensburg, IN 47240, USA",IN,47240,First Tier,Distribution,Distribution,http://www.dcremc.com/,,-85.5065032,39.3369001
+110,110,RushShelby Energy,"2777 S 840 W, Manilla, IN 46150, USA",IN,46150,First Tier,Distribution,Distribution,http://rse.coop/,,-85.6040516,39.5720477
+111,111,Henry County REMC,"3400 S State Road 3, New Castle, IN 47362, USA",IN,47362,First Tier,Distribution,Distribution,http://www.hcremc.com/,,-85.3838707,39.88297
+112,112,Whitewater Valley REMC,"101 Brownsville Ave, Liberty, IN 47353, USA",IN,47353,First Tier,Distribution,Distribution,https://www.wwvremc.com/,,-84.9312422,39.6375186
+113,113,Touchstone Energy Camp,"4301 Wilson Blvd, Arlington, VA 22203, USA",IN,47923,No Tier,Program,Youth Development,https://www.indianaec.org/Program/youth/touchstone-energy-camp/,,-77.112987,38.880529
+114,114,Powershift,,IN,46214,No Tier,Program,Energy Savings,https://www.powermoves.com/,,NA,NA
+115,115,Co-op Solar,"296 Nonotuck St Suite #4, Northampton, MA 01062, USA",IN,46214,No Tier,Program,Solar,https://www.powermoves.com/co-op-solar/solar-dashboard/,,-72.676393,42.330114
+116,116,Operation Round-up,"242 24th Ave NW, Norman, OK 73069, USA",IN,73069,No Tier,Program,Community,,,-97.4774301,35.2215373
+117,117,Steuben County Industrial Guild,"Steuben County, IN, USA",IN,46703,No Tier,Other,Development,https://steubenedc.com/Program-and-services/organizations-we-support/industrial-guild,,-84.981754,41.6115471
+118,118,Steuben County Economic Development Corporation,"907 S Wayne St Suite 100, Angola, IN 46703, USA",IN,46703,No Tier,Other,Development,https://steubenedc.com/,,-84.998602,41.627125
+119,119,Steuben County Tourism Bureau,"430 N Wayne St Suite 1B, Angola, IN 46703, USA",IN,46703,No Tier,Other,Development,https://visitsteubencounty.com/,,-84.998891,41.638883
+120,120,Steuben County Chamber of Commerce,"47 Liberty St, Bath, NY 14810, USA",IN,46703,No Tier,Other,Development,https://steubenedc.com/Program-and-services/chambers-of-commerce/,,-77.317818,42.335786
+121,121,Wabash Valley Power Association,"722 N High School Rd, Indianapolis, IN 46214, USA",IN,46214,Second Tier,CBN,G&T,https://www.wvpa.com/,,-86.2730289,39.7758899
+122,122,Power Moves,"253 W Merrick Rd, Valley Stream, NY 11580, USA",IN,46214,No Tier,Program,Energy Savings,https://www.powermoves.com/,,-73.7064523,40.6675077
+123,123,Indiana Connection,"6640 Intech Blvd #250, Indianapolis, IN 46278, USA",IN,46240,No Tier,Other,Press,https://www.indianaconnection.org/,,-86.275313,39.875871
+124,124,Together We Save,,IN,NA,No Tier,Program,Consumer Saivings,https://www.touchstoneenergy.com/together-we-save/overview/,,NA,NA
+125,125,Envirowatts,,IN,NA,No Tier,Program,Development,,funding for environmental projects in community,NA,NA
+126,126,Beat the Peak,,IN,NA,No Tier,Program,Community,https://ppec.coop/acrecopa-sign-up/,,NA,NA
+127,127,ACRE/COPA,,IN,NA,No Tier,Program,Political Action,,,NA,NA
+128,128,OurSolar,,IN,NA,No Tier,Program,Solar,https://www.oursolar.coop/pauldingputnam/,,NA,NA
+129,129,Paulding County Economic Development,"101 E Perry St, Paulding, OH 45879, USA",OH,45879,No Tier,Other,Economic Development,https://www.pced.net/,,-84.5806834,41.1373221
+130,130,Putnam County CIC,"115 S Fair St, Ottawa, OH 45875, USA",OH,45875,No Tier,Other,Economic Development,https://www.putnamcountyohio.com/,,-84.0292478,41.0194474
+131,131,Defiance County Economic Development,"1300 E 2nd St # 201, Defiance, OH 43512, USA",OH,43512,No Tier,Other,Economic Development,https://www.defecon.com/,,-84.341384,41.283784
+132,132,Van Wert County Economic Development,"145 E Main St, Van Wert, OH 45891, USA",OH,45891,No Tier,Other,Economic Development,https://vanwertcounty.org/,,-84.5810635,40.8697565
+133,133,Van Wert City Economic Development,"145 E Main St, Van Wert, OH 45891, USA",OH,45891,No Tier,Other,Economic Development,http://www.whyvanwert.org/,,-84.5810635,40.8697565
+134,134,Regional Chamber of Northeast Indiana,"200 E Main St, Fort Wayne, IN 46802, USA",IN,46802,No Tier,Other,Business Association,https://neinadvocates.com/,,-85.1374025,41.0803806
+135,135,Greater Fort Wayne Inc.,"200 E Main St #800, Fort Wayne, IN 46802, USA",IN,46802,No Tier,Other,Business Association,https://www.greaterfortwayneinc.com/,,-85.1374025,41.0803806
+136,136,Northeast Regional Partnership,"200 E Main St suite 910 a, Fort Wayne, IN 46802, USA",IN,46802,No Tier,Other,Business Association,https://neindiana.com/,,-85.137144,41.080499
+137,137,New Haven Economic Development,"165 Church St # 513, New Haven, CT 06510, USA",IN,6510,No Tier,Other,Economic Development,http://newhaven.in.gov/economic-development/,,-72.9240018,41.3074532
+138,138,Paulding Chamber of Commerce,"220 N Main St, Paulding, OH 45879, USA",OH,45879,No Tier,Other,Business Association,https://www.pauldingchamber.com/,,-84.5797504,41.1390368
+139,139,Ottawa Chamber of Commerce,"129 N Ct St, Ottawa, OH 45875, USA",OH,45875,No Tier,Other,Business Association,https://www.ottawachamber.org/,,-84.04661,41.019523
+140,140,Kalida Chamber of Commerce,"129 N Ct St, Ottawa, OH 45875, USA",OH,45875,No Tier,Other,Business Association,http://www.kalidaareachamber.com/,,-84.04661,41.019523
+141,141,Leipsic Chamber of Commerce,"142 E Main St, Leipsic, OH 45856, USA",OH,45856,No Tier,Other,Business Association,http://www.leipsicchamber.com/,,-83.984813,41.0983908
+142,142,Defiance Chamber of Commerce,"325 Clinton St, Defiance, OH 43512, USA",OH,43512,No Tier,Other,Business Association,http://www.defiancechamber.com/,,-84.3622701,41.2858508
+143,143,Columbus Chamber of Commerce,"150 S Front St #220, Columbus, OH 43215, USA",OH,43215,No Tier,Other,Business Association,https://www.columbusgroveoh.com/,,-83.0011795,39.959058
+144,144,Delphos Chamber of Commerce,"310 N Main St, Delphos, OH 45833, USA",OH,45833,No Tier,Other,Business Association,https://delphoschamber.com/,,-84.3395831,40.8453109
+145,145,Van Wert Chamber of Commerce,"118 N Washington St, Van Wert, OH 45891, USA",OH,45891,No Tier,Other,Business Association,http://www.vanwertchamber.com/,,-84.5828429,40.8703609
+146,146,New Haven Chamber of Commerce,"10, 900 Chapel St, New Haven, CT 06510, USA",IN,6510,No Tier,Other,Business Association,https://newhavenindiana.org/,,-72.9267169,41.306142
+147,147,Kosciusko Economic Development Corporation,"537 S Buffalo St, Warsaw, IN 46580, USA",IN,46580,No Tier,Other,Business Association,http://www.kosciuskoedc.com/Index.cfm,,-85.8563158,41.2337274
+148,148,Kosciusko Chamber of Commerce,"523 S Buffalo St, Warsaw, IN 46580, USA",IN,46580,No Tier,Other,Business Association,http://kremc.com/who-we-are/,,-85.8562478,41.2336042
+149,149,"The Builders Association Kosciusko Fulton Counties, Inc.","523 S Buffalo St, Warsaw, IN 46580, USA",IN ,46580,No Tier,Other,Business Association,https://www.bakfc.com/,,-85.8561774,41.2337709
+150,150,Marshall County Economic Development Corporation,"2864 Miller Dr, Plymouth, IN 46563, USA",IN,46563,No Tier,Other,Business Association,https://www.marshallcountyedc.org/,,-86.3459141,41.3595571
+151,151,Powerful Solutions E-newsletter,,IN,NA,No Tier,Other,Economic Development,,,NA,NA
+152,152,Cooperative Action Network,"601 E Brockway Ave Suite a & B, Morgantown, WV 26501, USA",IN,26501,No Tier,Program,Politcal Action,https://action.coop/,,-79.942606,39.623489
+153,153,Benton Community School Organization,"Benton Community School District, IA, USA",IN,NA,No Tier,Program,Education,http://www.benton.k12.ia.us/,,-92.0665197,41.980437
+154,154,Cooperative Research Network,,IN,NA,Second Tier,CBN,Research,,,NA,NA
+155,155,Federated Insurance,"121 E Park Square, Owatonna, MN 55060, USA",IN,55060,No Tier,Other,Insurance,https://www.federatedinsurance.com/home,,-93.2238794,44.0844619
+156,156,North Newton School Corporation,"North Newton School Corporation, IN, USA",IN,NA,No Tier,Other,Education,https://www.nn.k12.in.us,,-87.4207518,41.0509537
+157,157,South Newton School Corporation,"13102 S 50 E, Kentland, IN 47951, USA",IN,47951,No Tier,Other,Education,https://www.newton.k12.in.us/,,-87.3842794,40.8073855
+158,158,Community Solar,"100 Matsonford Rd #300, Radnor, PA 19087, USA",IN,47955,No Tier,Program,Solar,https://www.tipmont.org/solar/about-community-solar,,-75.356787,40.049676
+159,159,Wintek Corportation,"427 N 6th St C, Lafayette, IN 47901, USA",IN,47901,No Tier,Vendor,Internet Sercive,https://www.wintek.com/,,-86.890366,40.4214738
+160,160,Hoosier Energy Generation and Transmission,"6825 Blackburn Rd, Petersburg, IN 47567, USA",IN,47567,Second Tier,CBN,G&T,https://hoosierenergy.com/,,-87.2670099,38.5200246
+161,161,Indiana Office of Utility Consumer Counselor,"115 W Washington St #1500S, Indianapolis, IN 46204, USA",IN,46204,No Tier,Other,State Regulation,https://www.in.gov/oucc/,,-86.160437,39.7675601
+162,162,Parke County Chamber of Commerce,"128 W Ohio St, Rockville, IN 47872, USA",IN,47872,No Tier,Other,Business Association,http://www.parkecountychamber.com/,,-87.2287871,39.7628239
+163,163,Greater Greencastle Chamber of Commerce,"2 S Jackson St, Greencastle, IN 46135, USA",IN,46135,No Tier,Other,Business Association,http://www.gogreencastle.com/,,-86.8656406,39.6438864
+164,164,Community Action Program of Western Indiana,"418 Washington St, Covington, IN 47932, USA",IN,47932,No Tier,Program,Financal Assistance,http://www.incap.org/energyinfo.html,,-87.395794,40.137663
+165,165,Child Adult Resource Services,"201 Dormeyer Ave, Rockville, IN 47872, USA",IN,47872,No Tier,Program,Education,http://www.cars-services.org/,,-87.215284,39.763638
+166,166,American Cancer Society,"2222 Cottondale Ln Ste 310, Little Rock, AR 72202, USA",IN,72202,No Tier,Vendor,American Cancer Society,https://www.cancer.org/,,-92.2984205,34.7595105
+167,167,March of Dimes,"325 Crossways Park Dr, Woodbury, NY 11797, USA",NY,11797,No Tier,Vendor,March of Dimes,https://www.marchofdimes.org/,,-73.4829059,40.8070112
+168,168,Junior Achievement Program,"1 Education Way, Colorado Springs, CO 80906, USA",IN,80906,No Tier,Program,Youth Development,https://www.juniorachievement.org/web/ja-usa/home,,-104.821372,38.783289
+169,169,4-H Program,"201 Umberger Hall, 1612 Claflin Rd, Manhattan, KS 66506, USA",IN,66506,No Tier,Program,Youth Development,https://extension.purdue.edu/4h/Pages/default.aspx,,-96.5820569,39.1943815
+170,170,My Solar,"525 S Hewitt St, Los Angeles, CA 90013, USA",IN,90013,No Tier,Program,Solar,https://hoosierenergy.com/my-solar-win/,,-118.2349944,34.040777
+171,171,Habitat for Hummanity Restore,"601 N West St, Wichita, KS 67203, USA",IN,67203,No Tier,Vendor,Appliance Recycling,http://www.sinpwr.com/content/appliance-recycling-Program,,-97.3901688,37.6927476
+172,172,Perry County Chamber of Commerce,"9 W Main St, New Bloomfield, PA 17068, USA",IN,17068,No Tier,Other,Business Association,https://www.pickperry.com/,,-77.1874725,40.4194051
+173,173,Perry County Economic Development Corporation,"112 N Jackson St #5, Perryville, MO 63775, USA",IN,63775,No Tier,Other,Economic Development,https://www.pickperry.com/,,-89.8626649,37.7247401
+174,174,Spencer County Chamber of Commerce,"2792 N, US-231, Rockport, IN 47635, USA",IN,47635,No Tier,Other,Business Association,http://spencercountychamber.org/,,-87.0419718,37.9273961
+175,175,Lincolnland Economic Development Corporation,"2792 US-231, Rockport, IN 47635, USA",IN,47635,No Tier,Other,Economic Development,http://www.ledc.org/,,-87.0426219,37.9275192
+176,176,Page Day,"961 N, US-89, Page, AZ 86040, USA",IN,86040,No Tier,Program,Youth Development,https://www.indianaec.org/Program/youth/page-day/,,-111.484727,36.90273
+177,177,Idiana Office of Energy Development,"1 North Capitol, Suite 900, Indianapolis, IN 46204, USA",IN,NA,No Tier,Other,State Support,https://www.in.gov/oed/,,-86.1349019,40.2671941
+178,178,U.S. Energy Information Administration,"1000 Independence Ave SW, Washington, DC 20585, USA",IN,20585,No Tier,Other,Federal Support,https://www.eia.gov/,,-77.0259506,38.8870844
+179,179,Indiana Utility Regulatory Commission,"101 W Washington St #1500E, Indianapolis, IN 46204, USA",IN,46204,No Tier,Other,State Regulation,https://www.in.gov/iurc/,,-86.1610613,39.7665644
+180,180,Energy Star,"1019 19th St NW, Washington, DC 20036, USA",DC,20036,No Tier,Other,Federal Regulation,https://www.energystar.gov/,,-77.0432411,38.9030667
+181,181,Team Up,"404 Wilmont Dr D, Waukesha, WI 53189, USA",IN,53189,No Tier,Program,Energy Savings,https://teamuptosave.com/,,-88.234276,42.9743006
+182,182,Shedding Light on Hunger,NA,IN,NA,No Tier,Program,Food Bank,https://www.wwvremc.com/content/shedding-light-hunger-Program,swap LED lights for non-perishable food for food banks,NA,NA
+183,183,Ohio Cooperative Living,"6677 Busch Blvd, Columbus, OH 43229, USA",OH,433229,No Tier,Other,Press,https://ohioec.org/ohio-cooperative-living/,,-82.907123,40.4172871
+184,184,Ohio Electric Cooperatives,"6677 Busch Blvd, Columbus, OH 43229, USA",OH,43229,Fourth Tier,Association,State,https://ohioec.org/,,-82.9942982,40.1012987
+185,185,Buckeye Power,"6677 Busch Blvd, Columbus, OH 43229, USA",OH,43229,Second Tier,CBN,G&T,https://ohioec.org/buckeye-power/,,-82.9942982,40.1012987
+186,186,Arkansas Valley Electric Cooperative,"1811 W Commercial St, Ozark, AR 72949, USA",AR,72949,First Tier,Distribution,NA,http://www.avecc.com/,,-93.8442928,35.4887736
+187,187,Ashley-Chicot Cooperative,"307 E Jefferson St, Hamburg, AR 71646, USA",AR,71646,First Tier,Distribution,NA,https://ashley-chicot.com/,,-91.7952542,33.2271945
+188,188,C&L Electric Cooperative,"900 Church St, Star City, AR 71667, USA",AR,71667,First Tier,Distribution,NA,https://www.clelectric.com/,,-91.8540872,33.9530869
+189,189,Carroll Electric Cooperative,"707 SE Walton Blvd, Bentonville, AR 72712, USA",AR,72712,First Tier,Distribution,NA,https://www.carrollecc.com/,,-94.202757,36.3368027
+190,190,Clay County Electric Cooperative,"3111 US-67, Corning, AR 72422, USA",AR,72422,First Tier,Distribution,NA,http://www.claycountyelectric.com/,,-90.6414258,36.4117983
+191,191,Craighead Electric Cooperative,"7277 AR-69, Paragould, AR 72450, USA",AR,72450,First Tier,Distribution,NA,https://www.craigheadelectric.coop/,,-90.536454,35.986805
+192,192,Farmers Electric Cooperative,"2000 I-30, Greenville, TX 75402, USA",AR,75402,First Tier,Distribution,NA,https://www.farmerselectric.coop/,,-96.0609803,33.1348332
+193,193,First Electric Cooperative,"1000 S J P Wright Loop Rd, Jacksonville, AR 72076, USA",AR,72076,First Tier,Distribution,NA,https://www.firstelectric.coop/,,-92.0871282,34.8576355
+194,194,Mississippi County Electric Cooperative,"510 N Broadway St, Blytheville, AR 72315, USA",AR,72315,First Tier,Distribution,NA,http://www.mceci.com/,,-89.906501,35.931548
+195,195,North Arkansas Electric Cooperative,"824 AR-56, Ash Flat, AR 72513, USA",AR,72513,First Tier,Distribution,NA,https://www.naeci.com/,,-91.611709,36.214456
+196,196,Ouachita Electric Cooperative,"700 Bradley Ferry Rd, Camden, AR 71701, USA",AR,71701,First Tier,Distribution,NA,https://www.oecc.com/,,-92.8131966,33.5738882
+197,197,Ozarks Electric Cooperative,"3641 W Wedington Dr, Fayetteville, AR 72704, USA",AR,72704,First Tier,Distribution,NA,https://www.ozarksecc.com/,,-94.2124637,36.0779525
+198,198,Petit Jean Electric Cooperative,"270 Quality Dr, Clinton, AR 72031, USA",AR,72031,First Tier,Distribution,NA,http://www.pjecc.com/,,-92.456005,35.57052
+199,199,Rich Mountain Electric Cooperative,"515 Janssen Ave, Mena, AR 71953, USA",AR,71953,First Tier,Distribution,NA,http://www.rmec.com/,,-94.237211,34.584
+200,200,South Central Arkansas Electric Cooperative,"4818 Hwy 8 West, Arkadelphia, AR 71923, USA",AR,71923,First Tier,Distribution,NA,https://www.scaec.com/,,-93.133502,34.126743
+201,201,Southwest Arkansas Electric Cooperative,"2904 E 9th St, Texarkana, AR 71854, USA",AR,71854,First Tier,Distribution,NA,http://www.swrea.com/,,-94.0118307,33.4299286
+202,202,Woodruff Electric Cooperative,"3201 Highway 1 North, Forrest City, AR 72335, USA",AR,72335,First Tier,Distribution,NA,http://www.woodruffelectric.coop/,,-90.818158,35.039087
+203,203,Cooperative Finance Corporation,"20701 Cooperative Way, Sterling, VA 20166, USA",VA,20166,Co-op Finance,NA,NA,NA,,-77.4267655,39.0415808
+204,204,National Rural Telecommunications Cooperative,"2121 Cooperative Way, Herndon, VA 20171, USA",VA,20171,Technology,NA,NA,NA,,-77.4007126,38.9541839
+205,205,National Renewables Cooperative Association,"4140 W 99th St, Carmel, IN 46032, USA",IN,46032,National Co-op Association,NA,NA,NA,,-86.2360032,39.9310015
+206,206,Electric Cooperatives Federal Credit Union,"1 81st St, Little Rock, AR 72219, USA",AR,72219,Co-op Finance,NA,NA,NA,,-92.3224602,34.6775461
+207,207,Arkansas Advanced Energy Association,"219 S Victory St, Little Rock, AR 72201, USA",AR,72201,Statewide Association,NA,NA,NA,,-92.285814,34.7483865
+208,208,Smart Electric Power Alliance,"1220 19th St NW #800, Washington, DC 20036, USA",DC,20036,National Association,NA,NA,NA,,-77.043873,38.906625
+209,209,Association of Edison Illuminating Companies,"11517 Fruitland Ct, Cleveland, OH 44102, USA",OH,44102,National Association,NA,NA,NA,,-81.7666898,41.4849435
+210,210,Electric Power Research Institute,"3420 Hillview Ave, Palo Alto, CA 94304, USA",CA,94304,Research,NA,NA,NA,,-122.1466623,37.3964567
+211,211,Arkansas State Chamber of Commerce,"1200 W Capitol Ave, Little Rock, AR 72201, USA",AR,72201,Business,NA,NA,NA,,-92.284345,34.7465589
+212,212,Little Rock Chamber of Commerce,"200 E Markham St, Little Rock, AR 72201, USA",AR,72201,Business,NA,NA,NA,,-92.2687491,34.748131
+213,213,Electric Research and Manufacturing Cooperative,"1625 Sylvan Rd, Dyersburg, TN 38024, USA",TN,38024,Manufacturing,NA,NA,NA,,-89.343611,36.052886
+214,214,Arkansas Electric Cooperative Corporation,"1 81st St, Little Rock, AR 72209, USA",AR,72209,Statewide Association,NA,NA,NA,,-92.3224342,34.6777698
+215,215,Arkansas Electric Cooperative Incorporated,"1 81st St, Little Rock, AR 72209, USA",AR,72209,Sales,NA,NA,NA,,-92.3224342,34.6777698
+216,216,GridBridge,"130 Penmarc Dr, Raleigh, NC 27603, USA",NC,27603,Manufacturing,NA,NA,NA,,-78.6455055,35.7574711
+217,217,Today's Power,"8110 Scott Hamilton Dr, Little Rock, AR 72209, USA",AR,72209,Solar,NA,NA,NA,,-92.319525,34.6751651
+218,218,Roundup for Change,"P.O. Box 47, Ozark, AR 72949, USA",AR,72949,Community Development,NA,NA,NA,** has same value as in SC,NA,NA
+219,219,Arkansas Living,"P.O. Box 510, Little Rock, AR 72203, USA",AR,72203,State Magazine,NA,NA,NA,,NA,NA
+220,220,Arkansas FIRST,NA,AR,NA,Robotics Funding for STEM Education,NA,NA,NA,,NA,NA
+221,221,High Voltage Lineman Technology Program,"7648 Victory Blvd, Newport, AR 72112, USA",AR,72112,Development,NA,NA,NA,partnership with ASUN,NA,NA
+222,222,SeaPerch Underwater Robotics Program,,NA,NA,Development,NA,NA,NA,,NA,NA
+223,223,Arkansas Economic Development Commission,"900 West Capitol Avenue, Suite 400, Little Rock, AR 72201, USA",AR,72201,Development,NA,NA,NA,,NA,NA
+224,224,Co-op Connections,"4301 Wilson Blvd, Arlington, VA 22203, USA",VA,22203,Development,NA,NA,NA,,NA,NA
+225,225,Co-op Cares,"7277 AR-69, Paragould, AR 72450, USA",AR,72450,,,,https://www.craigheadelectric.coop/co-op-cares,,,
+226,226,Nest Program,"2000 I-30, Greenville, TX 75402, USA",AR,75402,,,,https://www.farmerselectric.coop/green-energy/nest-rush-hour-rewards-program.php,,,
+227,227,Co-ops Vote,NA,,,,,,https://www.vote.coop/,,,
+228,228,HELP PAYS,"700 Bradley Ferry Rd, Camden, AR 71701, USA",AR,71701,,,,https://www.oecc.com/help,investment program for energy efficiency upgrades,,
+229,229,Together We Learn,,,,,,,https://www.togetherwelearn.coop/learn,"teaches kids about coops, renewable enegy, and safety",,
+230,*********,Ozarks Natural Energy,Springsdale,AR,,,,,https://www.ozarksecc.com/one,,,
+231,231,Ozarks Cares,,,,,,,https://www.ozarksecc.com/ozarks-cares,building and maintaining community,,
+232,232,Green Power,,,,,,,http://www.swrea.com/Home/Content/16?sb=2,,,

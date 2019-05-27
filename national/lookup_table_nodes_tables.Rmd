@@ -255,3 +255,10 @@ legend("bottomleft", legend = levels(factor(V(g1)$cat1)),
 g1
 ```
 
+```{r}
+library(googlesheets)
+
+gs_ls()
+```
+
+
