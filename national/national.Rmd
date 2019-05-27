@@ -7,12 +7,49 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(mapview)
+library(rgdal)
+library(sf)
+library(ggplot2)
+library(stringr)
+library(scales)
+library(igraph)
+library(ggmap)
+library(maps)
+library(ggthemes)
+library(mapdata)
+library(tidyverse)
+library(ggrepel)
 ```
 
 
 Bring in the (Geocoded) National Data and the Edges
 ```{r}
-nat_nodes <- read.csv("./data/myfile.csv")
+# creating an object for national nodes
+
+nat_nodes <- read.csv("./data/natl_nodes-geocoded.csv", stringsAsFactors = F)
+
+# cleaning up data and clearing out extra variable of lng
+
+nat_nodes$lon <- nat_nodes$lng
+nat_nodes$lng <- NULL
+
+# creating an object for national edges
+
+nat_edges <- read.csv("./data/natl_edges.csv", stringsAsFactors = F)
+nat_edges
+```
+
+## Interactive Maps
+```{r}
+nat_nodes.sf <- st_as_sf(x = nat_nodes[!is.na(nat_nodes$lat),], 
+                        coords = c("lon", "lat"),
+                        crs = "+proj=longlat +datum=WGS84")
+mapview(nat_nodes.sf)
+
+
+
 ```
 
 Turn it into a graph
