@@ -34,6 +34,7 @@ nat_nodes <- read.csv("./data/natl_nodes-geocoded.csv", stringsAsFactors = F)
 
 nat_nodes$lon <- nat_nodes$lng
 nat_nodes$lng <- NULL
+nat_nodes
 
 # creating an object for national edges
 
@@ -48,9 +49,26 @@ nat_nodes.sf <- st_as_sf(x = nat_nodes[!is.na(nat_nodes$lat),],
                         crs = "+proj=longlat +datum=WGS84")
 mapview(nat_nodes.sf)
 
+``` 
 
+```{r}
+graph1 <- graph.data.frame(nat_edges, directed = T)
+graph1
+summary(graph1)
 
-```
+# adding attributes of the nodes to the graph
+nat_nodes$idch <- as.character(nat_nodes$ID)
+id <- match(V(graph1)$name, nat_nodes$idch)
+V(graph1)$lat <- nat_nodes$lat[id]
+V(graph1)$lon <- nat_nodes$lon[id]
+V(graph1)$cat1 <- as.character(nat_nodes$cat1[id])
+V(graph1)$cat2 <- as.character(nat_nodes$cat2[id])
+V(graph1)$cat3 <- as.character(nat_nodes$cat3[id])
+V(graph1)$fullname <- as.character(nat_nodes$Label[id])
+V(graph1)$state <- as.character(nat_nodes$State[id])
+
+``` 
+
 
 Turn it into a graph
 
