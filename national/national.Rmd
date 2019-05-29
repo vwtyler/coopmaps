@@ -128,8 +128,8 @@ legend("bottomleft", legend = levels(factor(V(graph_dnodes)$cat2)), col = rainbo
 
 
 ### Spatial Network
-```{r}
-# Plot network on a geographical map. 
+```{r echo = FALSE}
+# Plot network on a geographical map for South Carolina. 
 data(countyMapEnv)
 par(mfrow=c(1,1), mar=c(0,3,1,0))
 maps::map('county', 'south carolina')
@@ -151,6 +151,10 @@ plot(g.state, layout=latex,
 title("South Carolina Electric Cooperative Network")
 legend("bottomleft", legend = levels(factor(V(g.state)$cat2)), col = rainbow(12),
        pch = 16, bty = "n", title = "Node Type", inset=c(-0.2,0))
+
+# Plot network on a geographical map for Indiana.
+
+# Plot network on a geographical map for Arkansas.
 
 
 
