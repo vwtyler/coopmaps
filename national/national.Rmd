@@ -54,6 +54,11 @@ graph1 <- graph.data.frame(nat_edges, directed = T)
 graph1
 summary(graph1)
 
+# Fix one of the attributes. 
+
+nat_nodes$cat2[217] <- 'Vendor'
+nat_nodes$cat2
+
 # Add attributes of the nodes to the graph.
 nat_nodes$idch <- as.character(nat_nodes$ID)
 id <- match(V(graph1)$name, nat_nodes$idch)
