@@ -29,7 +29,7 @@ library(ggthemes)
 library(mapdata)
 library(tidyverse)
 library(ggrepel)
-library(networkD3)
+#library(networkD3)
 
 ```
 
@@ -430,7 +430,7 @@ FIFTH... now depict how they all connect to the two G&Ts in the state.
 sel.gt <- V(g.state)[cat3 == "GandT" | cat3 == "Distribution"]
 g.gt <- induced_subgraph(g.state, unlist(sel.gt))
 g.gt <- g.gt %>%
-  delete.edges(c(23, 21, 22))
+  delete.edges(c(23, 21, 22)) 
 g.gt <- g.gt %>%
   add_edges(c(2,6, 2,7, 2,14, 2,17, 2,9, 1,2))
 
@@ -455,7 +455,7 @@ head(edges.gt)
 ```
 
 ```{r}
-tiff("central.tiff", units="in", width=6, height=5, res=300)
+#tiff("central.tiff", units="in", width=6, height=5, res=300)
 sc_counties + 
   geom_sf(data = territories,
           inherit.aes = FALSE, aes(fill = name), 
@@ -483,7 +483,7 @@ sc_counties +
   labs(title = "South Carolina Cooperative Service Territories", subtitle = "with Distribution and G & T nodes", color = "Node Type") +
   guides(fill = "none", color = "legend") +
   theme_map()
-dev.off()
+#dev.off()
 ```
 
 ```{r}

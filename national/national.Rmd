@@ -135,9 +135,9 @@ par(mfrow=c(1,1), mar=c(0,3,1,0))
 maps::map('county', 'south carolina')
 
 ## HAVING A PROBLEM HERE...
-sel.state <- V(graph1)[state == "SC"]
+sel.state <- which(V(graph1)$state == "SC")
 g.state <- induced_subgraph(graph1, unlist(sel.state))
-latex <- matrix(c(V(g.state)$long, V(g.state)$lat), ncol=2)
+latex <- matrix(c(V(g.state)$lon, V(g.state)$lat), ncol=2)
 
 plot(g.state, layout=latex,
      add = TRUE,
