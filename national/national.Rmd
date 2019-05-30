@@ -54,9 +54,7 @@ graph1 <- graph.data.frame(nat_edges, directed = T)
 graph1
 summary(graph1)
 
-# Fix one of the attributes. 
 
-nat_nodes$cat2[217] <- 'Vendor'
 
 # Add attributes of the nodes to the graph.
 nat_nodes$idch <- as.character(nat_nodes$ID)
@@ -69,6 +67,9 @@ V(graph1)$cat3 <- as.character(nat_nodes$cat3[id])
 V(graph1)$fullname <- as.character(nat_nodes$Label[id])
 V(graph1)$state <- as.character(nat_nodes$State[id])
 
+# Fix one of the attributes. 
+
+nat_nodes$cat2[217] <- 'Vendor'
 summary(graph1)
 ``` 
 
@@ -165,22 +166,23 @@ legend("bottomleft", legend = levels(factor(V(g.state1)$cat2)), col = rainbow(12
 ```{r}
 # Plot network on a geographical map for Indiana.
 
-nat_nodes[!is.na(nat_nodes$lat),]
+#nat_nodes[!is.na(nat_nodes$lat),]
 
 data(countyMapEnv)
 par(mfrow=c(1,1), mar=c(1,3,3,1))
 maps::map('county', 'indiana')
 
+
 sel.state2 <- which(V(graph1)$state == 'IN')
 sel.state2
 g.state2 <- induced_subgraph(graph1, unlist(sel.state2))
-g.state2 <- g.state2 %>% 
-        delete_vertices(is.na(V(g.state2)$lon))
 latex <- matrix(c(V(g.state2)$lon, V(g.state2)$lat), ncol=2)
 latex
 
+g.state2
+
 plot(g.state2, layout=latex,
-     add = TRUE,
+    # add = TRUE,
      rescale = FALSE,
      edge.arrow.size=.4,
      edge.color="blue",
