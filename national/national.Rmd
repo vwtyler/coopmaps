@@ -138,21 +138,21 @@ data(countyMapEnv)
 par(mfrow=c(1,1), mar=c(0,3,1,0))
 maps::map('county', 'south carolina')
 
-sel.state <- which(V(graph1)$state == "SC")
-g.state <- induced_subgraph(graph1, unlist(sel.state))
-latex <- matrix(c(V(g.state)$lon, V(g.state)$lat), ncol=2)
+sel.state1 <- which(V(graph1)$state == "SC")
+g.state1 <- induced_subgraph(graph1, unlist(sel.state1))
+latex <- matrix(c(V(g.state1)$lon, V(g.state1)$lat), ncol=2)
 
-plot(g.state, layout=latex,
+plot(g.state1, layout=latex,
      add = TRUE,
      rescale = FALSE,
      edge.arrow.size=.4,
      edge.color="purple",
      vertex.size=10, 
-     vertex.color=rainbow(12)[factor(V(g.state)$cat2)],
+     vertex.color=rainbow(12)[factor(V(g.state1)$cat2)],
      edge.curved=.3,
      vertex.label=NA)
 title("South Carolina Electric Cooperative Network")
-legend("bottomleft", legend = levels(factor(V(g.state)$cat2)), col = rainbow(12),
+legend("bottomleft", legend = levels(factor(V(g.state1)$cat2)), col = rainbow(12),
        pch = 16, bty = "n", title = "Node Type", inset=c(-0.2,0))
 ```
 
@@ -162,22 +162,23 @@ data(countyMapEnv)
 par(mfrow=c(1,1), mar=c(1,3,3,1))
 maps::map('county', 'indiana')
 
-sel.state <- which(V(graph1)$state == "IN")
-g.state <- induced_subgraph(graph1, unlist(sel.state))
-V(g.state)$state
-latex <- matrix(c(V(g.state)$lon, V(g.state)$lat), ncol=2)
+sel.state2 <- which(V(graph1)$state == 'IN')
+sel.state2
+g.state2 <- induced_subgraph(graph1, unlist(sel.state2))
+V(g.state2)$state
+latex <- matrix(c(V(g.state2)$lon, V(g.state2)$lat), ncol=2)
 
-plot(g.state, layout=latex,
+plot(g.state2, layout=latex,
      add = TRUE,
      rescale = FALSE,
      edge.arrow.size=.4,
      edge.color="blue",
      vertex.size=10, 
-     vertex.color=rainbow(12)[factor(V(g.state)$cat2)],
+     vertex.color=rainbow(12)[factor(V(g.state2)$cat2)],
      edge.curved=.3,
      vertex.label=NA)
 title("Indiana Electric Cooperative Network")
-legend("bottomleft", legend = levels(factor(V(g.state)$cat2)), col = rainbow(12),
+legend("bottomleft", legend = levels(factor(V(g.state2)$cat2)), col = rainbow(12),
        pch = 16, bty = "n", title = "Node Type", inset=c(-0.8,0))
 
 
@@ -188,21 +189,21 @@ data(countyMapEnv)
 par(mfrow=c(1,1), mar=c(1,3,3,1))
 maps::map('county', 'arkansas')
 
-sel.state <- which(V(graph1)$state == "AR")
-g.state <- induced_subgraph(graph1, unlist(sel.state))
-latex <- matrix(c(V(g.state)$lon, V(g.state)$lat), ncol=2)
+sel.state3 <- which(V(graph1)$state == "AR")
+g.state3 <- induced_subgraph(graph1, unlist(sel.state3))
+latex <- matrix(c(V(g.state3)$lon, V(g.state3)$lat), ncol=2)
 
-plot(g.state, layout=latex,
+plot(g.state3, layout=latex,
      add = TRUE,
      rescale = FALSE,
      edge.arrow.size=.4,
      edge.color="orange",
      vertex.size=10, 
-     vertex.color=rainbow(12)[factor(V(g.state)$cat2)],
+     vertex.color=rainbow(12)[factor(V(g.state3)$cat2)],
      edge.curved=.3,
      vertex.label=NA)
 title("Arkansas Electric Cooperative Network")
-legend("bottomleft", legend = levels(factor(V(g.state)$cat2)), col = rainbow(12),
+legend("bottomleft", legend = levels(factor(V(g.state3)$cat2)), col = rainbow(12),
        pch = 16, bty = "n", title = "Node Type", inset=c(-0.4,0))
 
 
